@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+![Getting Started](ezgif.com-gif-maker-2.gif)
 
-You can use the [editor on GitHub](https://github.com/ShindanoSingi/bembe-trivia/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Trivia Game Using an API
+This game was developed using vanilla JS, html and CSS.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Technologies
+Three front end web development languages were utilized in this project: Vanilla JS, CSS and HTML.
 
-### Markdown
+### About the project
+As stated above, this game uses an API which generates questions and answers. It is designed for people who want to challenge themselves by answering random questions so they can cultivate themselves intellectually. The game randomly asks the player a question, and each question has its answers. The player has to click on the correct answer. If the player clicks on the correct answer, the button's background color change to green. Otherwise, it changes to red.
+Next, another question is presented to the user. and repeat the steps from above until the 10 questions are answered before the game stops. There game pays audio sounds for both correct answer and wrong answers. If the player answer 7 questions and more correctly, the screen displays a victory image. Else, it displays the failure message. To continue with the game, the player must click on the "reset" button wich bring the "home" screen back.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Wire Frame
 
-```markdown
-Syntax highlighted code block
+![Getting Started](wireFrame.jpg)
 
-# Header 1
-## Header 2
-### Header 3
+### Live Link
+[Trivia Game](https://shindanosingi.github.io/Project1_Trivia_Game/)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ShindanoSingi/bembe-trivia/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#### For more projects, click on the link below
+[More Projects](https://github.com/ShindanoSingi)
