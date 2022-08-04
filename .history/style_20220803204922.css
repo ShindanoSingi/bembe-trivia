@@ -4397,7 +4397,6 @@
     }
     /* The window with all elements */
     .containerBox {
-        transform: translateY(-0.5rem);
         margin: 0 auto;
         height: 100vh;
         display: flex;
@@ -4599,8 +4598,8 @@
     }
     /* All labels */
     .labels {
-        font-size: 14px;
-        transform: translateY(0.6rem);
+        font-size: 10px;
+        transform: translateY(0.8rem);
     }
     /* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
     .question-number {

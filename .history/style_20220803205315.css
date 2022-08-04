@@ -4397,7 +4397,7 @@
     }
     /* The window with all elements */
     .containerBox {
-        transform: translateY(-0.5rem);
+        transform: translateY(-1rem);
         margin: 0 auto;
         height: 100vh;
         display: flex;
