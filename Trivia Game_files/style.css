@@ -1,0 +1,240 @@
+.containerBox {
+    border: 2px solid green;
+    border-radius: 50px;
+    background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
+    width: 1700px;
+    height: 1800px;
+    display: inline-block;
+    justify-content: center;
+    background-image: url("trivia_image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.playerName {font-size: 46px;
+    text-align: left;
+    height: 50px;
+    width: 750px;
+    position: relative;
+    bottom: -90x;
+    left: 60px;
+    background-color: rgb(205, 220, 209);
+    border-radius: 80px;
+    padding: 30px;
+    font-weight: 800;
+    
+}
+
+div.div1 {
+    font-size: 56px;
+    position: relative;
+    height: 150px;
+    width: 1550px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid;
+    background-color: rgb(89, 156, 138);
+    text-align: center; 
+    border-bottom-color: red;
+}
+
+.qDifficultyBox {
+    border: 5px solid green;
+    border-radius: 30px;
+    background-color: rgb(216, 211, 182);
+    width: 720px;
+    height: 200px;
+    position: relative;
+    left: 895px;
+    top: -150px;
+    text-align: left;
+    padding: 0px 0 20px 20px;
+}
+
+.qCat {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.qDiff {
+    margin-top: -10px;
+}
+
+.image {
+    border: 2px solid green;
+    border-radius: 50px;
+    height: 900px;
+    width: 800px;
+    position: relative;
+    left: -385px;
+    top: -210px;
+}
+
+.response {
+    display: grid;
+    grid-auto-rows: 50px;
+    width: 750px;
+    position: relative;
+    left: 550px;
+    border-color: green;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 255, 208), rgb(106, 106, 9));
+    color: black;
+    font-size: 36px; 
+    border-radius: 60px;
+}
+
+#response1 {
+    margin-top: -110px;
+    padding: 30px;
+}
+
+#response2 {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+#response3 {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+#response4 {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.answersButtons {
+    position: relative;
+    bottom: 790px;
+    left: 345px;
+    display: grid;
+    gap: 25px;
+    
+}
+
+.imgAndQuestions {
+   position: absolute;
+   top: 30px;
+}
+
+#footer {
+    height: 100px;
+    width: 300px;
+    border: 2px solid green;
+    display: inline-block;
+    padding-top: 10px;
+    margin: 55px;
+    justify-content: center;
+    position: relative;
+    top: -720px;
+    font-size: 72px;
+    background-color: grey;
+    color: honeydew;
+    border-radius: 80px;
+}
+
+.labelT {
+    margin-top: -1000px;
+    display: inline-block;
+    justify-content: center;
+    margin: 90px;
+    position: absolute;
+    left: 470px;
+    font-size: 36px;
+}
+
+.labelQ {
+    margin-top: -1000px;
+    display: inline-block;
+    justify-content: center;
+    margin: 90px;
+    position: absolute;
+    left: 810px;
+}
+
+.labelC {
+    margin-top: -1000px;
+    display: inline-block;
+    justify-content: center;
+    margin: 90px;
+    position: absolute;
+    left: 1230px;
+}
+
+.labelW {
+    margin-top: -1000px;
+    display: inline-block;
+    justify-content: center;
+    margin: 90px;
+    position: absolute;
+    left: 1670px;
+    
+}
+
+.imgAndQuestions{
+    position: relative;
+    top: -30px;
+}
+
+.underQuestion {
+    position: relative;
+    top: 20px;
+}
+
+#labels {
+    color: red;
+    position: absolute;
+    top: 1490px;
+    font-size: 40px;
+    font-style: bold;
+}
+
+.difficulties {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 170px 170px 170px;
+    gap: 50px;
+    height: 100px;
+    border-color: green;
+}
+
+#difficulty {
+    background-image: linear-gradient(rgb(25, 201, 183), rgb(36, 184, 43));
+    border: 5px solid blue;
+    border-radius: 50px;
+    font-size: 34px;
+    color: white;
+}
+
+body {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    height: 1400px;
+}
+
+h1 {
+    text-shadow: 2px 2px red;
+}
+
+div#footer.wrong {
+    color: red;
+}
+
+div#footer.correct {
+    color: greenyellow;
+}
+
+
+
+
+
+
+
