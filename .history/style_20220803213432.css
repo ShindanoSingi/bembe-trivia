@@ -4798,7 +4798,7 @@
         font-size: 1.5 rem;
         color: rgb(17, 13, 12);
         text-shadow: 0.05rem 0.05rem red;
-        transform: translateY(-1rem);
+        transform: translateY(-0.5rem);
     }
 
     .div1 {
@@ -4807,7 +4807,7 @@
     /* The box containing the question */
     .questionBox {
         color: rgb(0, 0, 0);
-        width: 95vw;
+        width: 94vw;
         height: 4rem;
         padding: 0rem 0.5rem;
         display: flex;
@@ -4840,7 +4840,7 @@
         font-size: 12px;
         text-align: center;
         height: 3.1rem;
-        width: 8.8rem;
+        width: 9rem;
         transform: translateY(0.3rem);
         background-color: rgb(205, 220, 209);
         border-radius: 0.5rem;
@@ -4908,7 +4908,7 @@
     /* image */
     img {
         height: 18rem;
-        width: 98vw;
+        width: 95vw;
         position: relative;
         top: 2rem;
         border: 0.15rem solid green;
@@ -4941,9 +4941,9 @@
     }
     /* Show answer button */
     #showAnswer {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: blue;
-        width: 9.2rem;
+        width: 10rem;
         height: 2.5rem;
         border: 0.54vh solid green;
         border: 0.27vh solid yellow;
@@ -4953,7 +4953,7 @@
         background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
         text-align: left;
         padding: 0.25rem 1rem 1rem 1rem;
-        transform: translateX(2.2rem);
+        transform: translateX(2.5rem);
     }
     #showAnswer:hover {
         background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
@@ -4961,9 +4961,9 @@
     }
     /* Start game button */
     .startGame {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: blue;
-        width: 9.2rem;
+        width: 10rem;
         height: 2.5rem;
         border: 0.54vh solid green;
         border: 0.27vh solid yellow;
@@ -4973,7 +4973,7 @@
         background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
         text-align: right;
         padding: 0.25rem 1rem 1rem 1rem;
-        transform: translateX(-1.8rem);
+        transform: translateX(-2rem);
     }
     /* Start game button */
     .startGame:hover {
@@ -4982,10 +4982,10 @@
     }
     /* Reset button */
     .reset {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: blue;
-        width: 3.8rem;
-        height: 3.8rem;
+        width: 4rem;
+        height: 4rem;
         border: 0.5rem solid green;
         border: 0.15rem solid yellow;
         border-radius: 20rem;

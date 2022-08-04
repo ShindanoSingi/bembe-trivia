@@ -4358,7 +4358,6 @@
     }
 }
 
-/* Samsung S 2e0 ultra */
 @media screen and (max-width: 412px) {
     /*  Set h1 text to red */
     h1 {
@@ -4404,14 +4403,14 @@
     }
     /* The catgory Box */
     .category {
-        font-size: 12px;
         text-align: center;
-        height: 3.1rem;
-        width: 9rem;
-        transform: translateY(0.3rem);
+        height: 3.2rem;
+        width: 10rem;
+        position: relative;
         background-color: rgb(205, 220, 209);
         border-radius: 0.5rem;
         padding: 0.5rem;
+        font-weight: 800;
     }
     /* The show answer message box */
     .showAnswer {
@@ -4475,7 +4474,7 @@
     /* image */
     img {
         height: 18rem;
-        width: 95vw;
+        width: 90vw;
         position: relative;
         top: 2rem;
         border: 0.15rem solid green;
@@ -4502,7 +4501,7 @@
     #response4 {
         font-size: 1em;
         padding: 0.5rem;
-        width: 23rem;
+        width: 25rem;
         height: 3.5rem;
         text-align: center;
     }
@@ -4510,7 +4509,7 @@
     #showAnswer {
         font-size: 1.2rem;
         color: blue;
-        width: 10rem;
+        width: 12rem;
         height: 2.5rem;
         border: 0.54vh solid green;
         border: 0.27vh solid yellow;
@@ -4530,7 +4529,7 @@
     .startGame {
         font-size: 1.2rem;
         color: blue;
-        width: 10rem;
+        width: 12rem;
         height: 2.5rem;
         border: 0.54vh solid green;
         border: 0.27vh solid yellow;
@@ -4553,439 +4552,6 @@
         color: blue;
         width: 4rem;
         height: 4rem;
-        border: 0.5rem solid green;
-        border: 0.15rem solid yellow;
-        border-radius: 20rem;
-        font-family: cursive;
-        font-weight: bold;
-        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
-        position: relative;
-        top: 0;
-        z-index: 1;
-    }
-    /* Reset button */
-    .reset:hover {
-        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
-        color: white;
-    }
-    /* Answers con */
-    .answersButtons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        transform: translateY(-15rem);
-    }
-    /* Class containing the image and responses buttons */
-    .imgAndQuestions {
-        position: relative;
-        top: 3.5rem;
-    }
-    /* Class containing the three buttons (show answer, reset and start the game) */
-    .threeBottomButtons {
-        position: relative;
-        top: -8rem;
-    }
-    /* All labels */
-    .labels {
-        transform: translateY(0.8rem);
-    }
-    /* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
-    .question-number {
-        color: rgb(205, 200, 200);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .correct-answers {
-        color: greenyellow;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .wrong-answers {
-        color: red;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    /* The bottom boxes for total question number, correct answers and wrong answers */
-    .bottombuttons {
-        text-align: center;
-        width: 3rem;
-        border: 0.15rem solid green;
-        padding: 0.4rem;
-        position: relative;
-        background-color: black;
-        color: honeydew;
-        border-radius: 2rem;
-    }
-    .labelsAndButtons {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        position: relative;
-        top: -9.5rem;
-    }
-
-    #bottomPart{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: translateY(-4rem);
-
-    }
-
-    /* Set the wrong anser to red */
-    #wrong {
-        color: rgb(255, 0, 0);
-    }
-    /* Set the correct anser to green */
-    #correct {
-        color: greenyellow;
-    }
-    #easy,
-    #medium,
-    #hard {
-        text-align: center;
-        font-size: 12px;
-    }
-    /* Change the color when "easy" button is hovered over */
-    #easy:hover {
-        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
-    }
-    /* Change the color when "easy" button is hovered over */
-    #medium:hover {
-        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
-    }
-    /* Change the color when "easy" button is hovered over */
-    #hard:hover {
-        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
-    }
-    /* Win window */
-    .win {
-        margin: 0 auto;
-        background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-image: url("trivia_image.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        /* z-index: 1; */
-        display: none;
-    }
-    /* Trophy in the win window */
-    .winImage {
-        position: relative;
-        top: 16.27vh;
-        height: 27.12vh;
-        width: 27.12vh;
-        border-radius: 21.69vh;
-        border: 0.81vh double rgb(10, 238, 29);
-    }
-    /* "Congratulations!" in the win window */
-    #winPar1 {
-        position: absolute;
-        right: 4.07vh;
-        width: 54.24vh;
-        position: relative;
-        top: -30.24vh;
-        color: rgb(6, 240, 18);
-        text-shadow: 0 0 0.27vh rgb(249, 8, 8), 0 0 0.54vh rgb(223, 9, 9), 0 0 1.14vh rgb(233, 46, 13), 0 0 2.22vh rgb(255, 30, 0), 0 0 2.49vh rgb(255, 0, 0);
-        position: relative;
-        /* left: -5.37vh; */
-    }
-    /* The message below the trophy */
-    #winPar2 {
-        position: relative;
-        top: 2.71vh;
-        color: rgb(6, 240, 6);
-        text-shadow: 0 0 0.27vh rgb(249, 8, 8), 0 0 0.54vh rgb(223, 9, 9), 0 0 1.14vh rgb(233, 46, 13), 0 0 2.22vh rgb(255, 30, 0), 0 0 2.49vh rgb(255, 0, 0);
-        position: relative;
-    }
-    /* The reset button in the win window */
-    .winReset {
-        color: blue;
-        width: 8vh;
-        height: 8vh;
-        border: 0.27vh solid yellow;
-        border-radius: 30vh;
-        font-family: cursive;
-        font-weight: bold;
-        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
-        position: absolute;
-        top: 68vh;
-        /* left: 18.31vh; */
-        z-index: 1;
-    }
-    /* Change the color of win reset button in win window when the button is hovered over. */
-    .winReset:hover {
-        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
-        color: white;
-    }
-    /* Lose window */
-    .lose {
-        border: 0.54vh solid rgb(14, 1, 2);
-        border-radius: 2.71vh;
-        background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
-        width: 43.66vh;
-        height: 80vh;
-        display: flex;
-        align-items: center;
-        display: inline-block;
-        justify-content: center;
-        background-image: url("trivia_image.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        /* left: -89.5vh; */
-        z-index: -1;
-        display: none;
-    }
-    /* The message in the lose window */
-    #losePar {
-        position: relative;
-        top: -27.12vh;
-        color: rgb(240, 33, 6);
-        text-shadow: 0 0 0.27vh rgb(2, 27, 3), 0 0 0.54vh rgb(31, 8, 2), 0 0 1.14vh rgb(24, 5, 2), 0 0 2.22vh rgb(0, 255, 21), 0 0 2.49vh rgb(0, 255, 38);
-        position: relative;
-        display: flex;
-        justify-content: center;
-        top: 10vh;
-        /* padding: 0.27vh 0.27vh; */
-    }
-    /* Reset button in lose window */
-    .loseReset {
-        color: blue;
-        width: 8vh;
-        height: 8vh;
-        border: 0.27vh solid yellow;
-        border-radius: 30vh;
-        font-family: cursive;
-        font-weight: bold;
-        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
-        position: absolute;
-        top: 68vh;
-        /* left: 18.31vh; */
-        z-index: -1;
-    }
-    /* Change the color of lose button when in the lose window when the button is hovered over */
-    .loseReset:hover {
-        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
-        color: white;
-    }
-    /* Elements under the box for question */
-    .underQuestion {
-        position: relative;
-        top: -4vh;
-    }
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-image: url("trivia_image.jpeg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
-/* iPhone 12 Pro */
-@media screen and (max-width: 390px) {
-    /*  Set h1 text to red */
-    h1 {
-        font-size: 1.5 rem;
-        color: rgb(17, 13, 12);
-        text-shadow: 0.05rem 0.05rem red;
-        transform: translateY(-1rem);
-    }
-
-    .div1 {
-        height: 1rem;
-    }
-    /* The box containing the question */
-    .questionBox {
-        color: rgb(0, 0, 0);
-        width: 95vw;
-        height: 4rem;
-        padding: 0rem 0.5rem;
-        display: flex;
-        justify-content: center;
-        border: 0.02rem solid;
-        background-color: rgb(89, 156, 138);
-        text-align: center;
-        border-bottom-color: red;
-        border-radius: 0.5rem;
-        position: relative;
-        top: -0.7rem;
-    }
-    /* The window with all elements */
-    .containerBox {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-    /* Label for category */
-    .labelCategory {
-        text-align: center;
-        color: white;
-        transform: translateY(0.8rem);
-    }
-    /* The catgory Box */
-    .category {
-        font-size: 12px;
-        text-align: center;
-        height: 3.1rem;
-        width: 8.8rem;
-        transform: translateY(0.3rem);
-        background-color: rgb(205, 220, 209);
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-    }
-    /* The show answer message box */
-    .showAnswer {
-        font-size: 1em;
-        padding: 0.5rem;
-        height: 1.5rem;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 5rem;
-        color: honeydew;
-        visibility: hidden;
-        border: 0.1rem solid green;
-        border-radius: 0.5rem;
-        background-color:rgb(2, 27, 3);
-    }
-    /*  Individual difficulty button */
-    .difficulty {
-        background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
-        border: 0.2rem solid rgb(21, 139, 35);
-        border-radius: 1rem;
-        color: white;
-    }
-    .qCat {
-        font-size: 1px;
-        margin: 0.54vh;
-        display: flex;
-        justify-content: center;
-    }
-    .qDiff {
-        margin-top: -0.27vh;
-    }
-    /*  Class containing all difficulty buttons */
-    .difficulties-container {
-        display: flex;
-        justify-content: center;
-        display: grid;
-        grid-template-rows: 1.5rem 1.5rem 1.5rem;
-        grid-template-columns: 4rem 4rem 4rem;
-        gap: 1vh;
-        border-color: green;
-    }
-    /* The box containing difficulty buttons */
-    .qDifficultyBox {
-        width: 13rem;
-        border: 0.14vh solid green;
-        border-radius: 0.5rem;
-        background-color: rgb(65, 56, 8);
-        height: 3.2rem;
-        padding: 0.5rem;
-        color: white;
-        transform: translateY(2rem);
-    }
-    .category-and-difficulty-container {
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(1.2rem);
-        height: 3.2rem;
-    }
-    /* image */
-    img {
-        height: 18rem;
-        width: 98vw;
-        position: relative;
-        top: 2rem;
-        border: 0.15rem solid green;
-        border-radius: 0.5rem;
-    }
-    /* all response buttons */
-    .response {
-        display: grid;
-        position: relative;
-        border-color: green;
-        justify-content: center;
-        background-image: linear-gradient(rgb(173, 202, 9), rgb(214, 184, 14));
-        color: black;
-        border-radius: 0.5rem;
-    }
-    /* All response buttons */
-    .response:hover {
-        background-image: linear-gradient(rgb(32, 90, 165), rgb(72, 168, 192));
-    }
-    /* Individual responses */
-    #response1,
-    #response2,
-    #response3,
-    #response4 {
-        font-size: 1em;
-        padding: 0.5rem;
-        width: 23rem;
-        height: 3.5rem;
-        text-align: center;
-    }
-    /* Show answer button */
-    #showAnswer {
-        font-size: 1rem;
-        color: blue;
-        width: 9.2rem;
-        height: 2.5rem;
-        border: 0.54vh solid green;
-        border: 0.27vh solid yellow;
-        border-radius: 20rem;
-        font-family: cursive;
-        font-weight: bold;
-        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
-        text-align: left;
-        padding: 0.25rem 1rem 1rem 1rem;
-        transform: translateX(2.2rem);
-    }
-    #showAnswer:hover {
-        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
-        color: white;
-    }
-    /* Start game button */
-    .startGame {
-        font-size: 1rem;
-        color: blue;
-        width: 9.2rem;
-        height: 2.5rem;
-        border: 0.54vh solid green;
-        border: 0.27vh solid yellow;
-        border-radius: 20rem;
-        font-family: cursive;
-        font-weight: bold;
-        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
-        text-align: right;
-        padding: 0.25rem 1rem 1rem 1rem;
-        transform: translateX(-1.8rem);
-    }
-    /* Start game button */
-    .startGame:hover {
-        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
-        color: white;
-    }
-    /* Reset button */
-    .reset {
-        font-size: 1rem;
-        color: blue;
-        width: 3.8rem;
-        height: 3.8rem;
         border: 0.5rem solid green;
         border: 0.15rem solid yellow;
         border-radius: 20rem;
