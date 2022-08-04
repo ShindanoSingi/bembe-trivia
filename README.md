@@ -15,7 +15,7 @@ Next, another question is presented to the user. and repeat the steps from above
 ![Getting Started](wireFrame.jpg)
 
 ### Live Link
-[Trivia Game](https://shindanosingi.github.io/Project1_Trivia_Game/)
+[Trivia Game](https://shindanosingi.github.io/bembe-trivia/)
 
 #### For more projects, click on the link below
 [More Projects](https://github.com/ShindanoSingi)
