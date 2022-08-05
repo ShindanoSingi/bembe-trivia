@@ -5526,8 +5526,8 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 1rem;
-        /* transform: translateY(-3rem); */
+        top: 2rem;
+        transform: translateY(-3rem);
 
     }
 

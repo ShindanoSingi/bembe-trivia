@@ -440,17 +440,16 @@
         top: -4vh;
     }
     body {
+        font-size: 1.50rem;
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
         max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
 
     #bottomPart{
         display: flex;
@@ -879,14 +878,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (max-width: 1366px) {
 
     #bottomPart{
         display: flex;
@@ -1315,14 +1313,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
 
     #bottomPart{
         display: flex;
@@ -1751,14 +1748,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     #bottomPart{
         display: flex;
@@ -2187,14 +2183,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
 
     #bottomPart{
         display: flex;
@@ -2623,14 +2618,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
 
     #bottomPart{
         display: flex;
@@ -3060,14 +3054,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -3497,14 +3490,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -3937,14 +3929,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -4371,15 +4362,14 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        height: 100vh;
         background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
 /* Samsung S 2e0 ultra */
-@media screen and (min-width: 412px) {
+@media screen and (max-width: 412px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -4806,15 +4796,14 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        max-height: 100vh;
+        background-repeat: no-repeat;
     }
 }
 
 /* iPhone 12 Pro */
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -4898,7 +4887,7 @@
         justify-content: center;
     }
     .qDiff {
-        margin-top: -0.27rem;
+        margin-top: -0.27vh;
     }
     /*  Class containing all difficulty buttons */
     .difficulties-container {
@@ -5241,15 +5230,14 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
 /* iPhone 8 and smaller */
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 375px) {
     /*  Set h1 text to red */
     h1 {
         color: rgb(17, 13, 12);
@@ -5285,7 +5273,6 @@
         align-items: center;
         position: relative;
         z-index: 1;
-        height: 80vh;
     }
     /* Label for category */
     .labelCategory {
@@ -5525,9 +5512,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        top: 1rem;
-        /* transform: translateY(-3rem); */
+        transform: translateY(-3rem);
 
     }
 
@@ -5559,7 +5544,7 @@
     }
     /* Win window */
     .win {
-        margin: 0 auto;
+        /* margin: 0 auto;
         background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
         height: 100vh;
         display: flex;
@@ -5569,42 +5554,42 @@
         background-image: url("trivia_image.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
-        position: relative;
+        position: relative; */
         /* z-index: 1; */
-        display: none;
+        /* display: none; */
     }
     /* Trophy in the win window */
     .winImage {
-        position: relative;
+        /* position: relative;
         top: 16.27vh;
         height: 27.12vh;
         width: 27.12vh;
         border-radius: 21.69vh;
-        border: 0.81vh double rgb(10, 238, 29);
+        border: 0.81vh double rgb(10, 238, 29); */
     }
     /* "Congratulations!" in the win window */
     #winPar1 {
-        position: absolute;
+        /* position: absolute;
         right: 4.07vh;
         width: 54.24vh;
         position: relative;
         top: -30.24vh;
         color: rgb(6, 240, 18);
         text-shadow: 0 0 0.27vh rgb(249, 8, 8), 0 0 0.54vh rgb(223, 9, 9), 0 0 1.14vh rgb(233, 46, 13), 0 0 2.22vh rgb(255, 30, 0), 0 0 2.49vh rgb(255, 0, 0);
-        position: relative;
+        position: relative; */
         /* left: -5.37vh; */
     }
     /* The message below the trophy */
     #winPar2 {
-        position: relative;
+        /* position: relative;
         top: 2.71vh;
         color: rgb(6, 240, 6);
         text-shadow: 0 0 0.27vh rgb(249, 8, 8), 0 0 0.54vh rgb(223, 9, 9), 0 0 1.14vh rgb(233, 46, 13), 0 0 2.22vh rgb(255, 30, 0), 0 0 2.49vh rgb(255, 0, 0);
-        position: relative;
+        position: relative; */
     }
     /* The reset button in the win window */
     .winReset {
-        color: blue;
+        /* color: blue;
         width: 8vh;
         height: 8vh;
         border: 0.27vh solid yellow;
@@ -5613,18 +5598,18 @@
         font-weight: bold;
         background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
         position: absolute;
-        top: 68vh;
+        top: 68vh; */
         /* left: 18.31vh; */
-        z-index: 1;
+        /* z-index: 1; */
     }
     /* Change the color of win reset button in win window when the button is hovered over. */
     .winReset:hover {
-        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
-        color: white;
+        /* background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white; */
     }
     /* Lose window */
     .lose {
-        border: 0.54vh solid rgb(14, 1, 2);
+        /* border: 0.54vh solid rgb(14, 1, 2);
         border-radius: 2.71vh;
         background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
         width: 43.66vh;
@@ -5636,26 +5621,26 @@
         background-image: url("trivia_image.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
-        position: relative;
+        position: relative; */
         /* left: -89.5vh; */
-        z-index: -1;
-        display: none;
+        /* z-index: -1;
+        display: none; */
     }
     /* The message in the lose window */
     #losePar {
-        position: relative;
+        /* position: relative;
         top: -27.12vh;
         color: rgb(240, 33, 6);
         text-shadow: 0 0 0.27vh rgb(2, 27, 3), 0 0 0.54vh rgb(31, 8, 2), 0 0 1.14vh rgb(24, 5, 2), 0 0 2.22vh rgb(0, 255, 21), 0 0 2.49vh rgb(0, 255, 38);
         position: relative;
         display: flex;
         justify-content: center;
-        top: 10vh;
+        top: 10vh; */
         /* padding: 0.27vh 0.27vh; */
     }
     /* Reset button in lose window */
     .loseReset {
-        color: blue;
+        /* color: blue;
         width: 8vh;
         height: 8vh;
         border: 0.27vh solid yellow;
@@ -5664,14 +5649,14 @@
         font-weight: bold;
         background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
         position: absolute;
-        top: 68vh;
+        top: 68vh; */
         /* left: 18.31vh; */
-        z-index: -1;
+        /* z-index: -1; */
     }
     /* Change the color of lose button when in the lose window when the button is hovered over */
     .loseReset:hover {
-        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
-        color: white;
+        /* background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white; */
     }
     /* Elements under the box for question */
     .underQuestion {
@@ -5680,11 +5665,5 @@
     }
     body {
         font-family: 'Roboto', sans-serif;
-        background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        /* height: 100vh; */
     }
 }

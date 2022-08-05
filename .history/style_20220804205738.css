@@ -446,11 +446,10 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
 
     #bottomPart{
         display: flex;
@@ -886,7 +885,7 @@
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (max-width: 1366px) {
 
     #bottomPart{
         display: flex;
@@ -1322,7 +1321,7 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
 
     #bottomPart{
         display: flex;
@@ -1758,7 +1757,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     #bottomPart{
         display: flex;
@@ -2194,7 +2193,7 @@
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
 
     #bottomPart{
         display: flex;
@@ -2630,7 +2629,7 @@
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
 
     #bottomPart{
         display: flex;
@@ -3067,7 +3066,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -3504,7 +3503,7 @@
     }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -3944,7 +3943,7 @@
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -4379,7 +4378,7 @@
 }
 
 /* Samsung S 2e0 ultra */
-@media screen and (min-width: 412px) {
+@media screen and (max-width: 412px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -4814,7 +4813,7 @@
 }
 
 /* iPhone 12 Pro */
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -5249,7 +5248,7 @@
 }
 
 /* iPhone 8 and smaller */
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 375px) {
     /*  Set h1 text to red */
     h1 {
         color: rgb(17, 13, 12);
@@ -5285,7 +5284,6 @@
         align-items: center;
         position: relative;
         z-index: 1;
-        height: 80vh;
     }
     /* Label for category */
     .labelCategory {
@@ -5526,7 +5524,7 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 1rem;
+        top: 2rem;
         /* transform: translateY(-3rem); */
 
     }
@@ -5685,6 +5683,6 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        /* height: 100vh; */
+        height: 100vh;
     }
 }

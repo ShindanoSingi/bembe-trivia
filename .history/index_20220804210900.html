@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Trivia Game</title>
+    </head>
+
+    <body>
+        <div class="containerBox">
+            <h1>TRIVIA GAME</h1>
+            <div class="questionBox" id="questionBox">
+                <p class="div1">Please select one of question difficulties, then click on start the game button.</p>
+            </div>
+
+            <div class="underQuestion">
+                <div class="category-and-difficulty-container">
+                    <div class="category-container">
+                        <div class="labelCategory">Category</div>
+                        <p class="category">Loading category...</p>
+                    </div>
+
+                    <div class="qDifficultyBox">
+                        <p id="question" class="qCat">QUESTION DIFFICULTY</p>
+                        <div class="difficulties-container">
+                            <button class="difficulty" id="easy">Easy</button>
+                            <button class="difficulty" id="medium">Medium</button>
+                            <button class="difficulty" id="hard">Hard</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="showAnswer">Loading the answer...</div>
+                <div class="imgAndQuestions">
+                    <img src="pexels-skitterphoto-9198.jpg" alt="nature image">
+                    <div class="answersButtons">
+                        <button class="response" id="response1">Loading the
+                            answer...</button>
+                        <button class="response" id="response2">Loading the
+                            answer...</button>
+                        <button class="response" id="response3">Loading the
+                            answer...</button>
+                        <button class="response" id="response4">Loading the
+                            answer...</button>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomPart">
+                <div class="labelsAndButtons">
+                    <div class="question-number">
+                        <p class="labels" id="labelQ">Total Questons</p>
+                        <div class="bottombuttons" id="questionNumber">0</div>
+                    </div>
+                    <div class="correct-answers">
+                        <p class="labels" id="labelC">Correct Answers</p>
+                        <div class="bottombuttons" id="correct">0</div>
+                    </div>
+                    <div class="wrong-answers">
+                        <p class="labels" id="labelW">Wrong Answers</p>
+                        <div class="bottombuttons" id="wrong">0</div>
+                    </div>
+                    <div class="timerQuestionCorrectWrong"></div>
+                </div>
+                <div class="threeBottomButtons">
+                    <button id="showAnswer">Show Answer</button>
+                    <button class="reset">Reset</button>
+                    <button class="startGame">Start The Game</button>
+                </div>
+            </div>
+        </div>
+        <div class="win">
+            <img class="winImage" src="winImage.jpeg" alt="trophy">
+            <p id="winPar1">Congratulations!</p>
+            <p id="winPar2">You Win!</p>
+            <button class="winReset">Reset</button>
+        </div>
+
+        <div class="lose">
+            <p id="winPar1">Congratulations!</p>
+            <p id="losePar">Sorry, Try Again!</p>
+            <button class="loseReset">Reset</button>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
+

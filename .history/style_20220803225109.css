@@ -440,17 +440,16 @@
         top: -4vh;
     }
     body {
+        font-size: 1.50rem;
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
         max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
 
     #bottomPart{
         display: flex;
@@ -879,14 +878,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (max-width: 1366px) {
 
     #bottomPart{
         display: flex;
@@ -1315,14 +1313,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
 
     #bottomPart{
         display: flex;
@@ -1751,14 +1748,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     #bottomPart{
         display: flex;
@@ -2187,14 +2183,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
 
     #bottomPart{
         display: flex;
@@ -2623,14 +2618,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
 
     #bottomPart{
         display: flex;
@@ -3060,14 +3054,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -3497,14 +3490,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -3937,14 +3929,13 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -4371,15 +4362,14 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        height: 100vh;
         background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
 /* Samsung S 2e0 ultra */
-@media screen and (min-width: 412px) {
+@media screen and (max-width: 412px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -4806,15 +4796,14 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        max-height: 100vh;
+        background-repeat: no-repeat;
     }
 }
 
 /* iPhone 12 Pro */
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 390px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 1.5 rem;
@@ -4898,7 +4887,7 @@
         justify-content: center;
     }
     .qDiff {
-        margin-top: -0.27rem;
+        margin-top: -0.27vh;
     }
     /*  Class containing all difficulty buttons */
     .difficulties-container {
@@ -5241,15 +5230,14 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
 
 /* iPhone 8 and smaller */
-@media screen and (min-width: 370px) {
+@media screen and (max-width: 375px) {
     /*  Set h1 text to red */
     h1 {
         color: rgb(17, 13, 12);
@@ -5285,7 +5273,6 @@
         align-items: center;
         position: relative;
         z-index: 1;
-        height: 80vh;
     }
     /* Label for category */
     .labelCategory {
@@ -5525,9 +5512,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        top: 1rem;
-        /* transform: translateY(-3rem); */
+        transform: translateY(-3rem);
 
     }
 
@@ -5681,10 +5666,8 @@
     body {
         font-family: 'Roboto', sans-serif;
         background-image: url("trivia_image.jpeg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-size: cover;
-        /* height: 100vh; */
+        background-repeat: no-repeat;
+        max-height: 100vh;
     }
 }
