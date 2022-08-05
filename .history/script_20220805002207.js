@@ -70,7 +70,6 @@ let corrAnswer;
 // Create new audio objects
 // Code source: https://www.w3schools.com/jsref/met_audio_play.asp
 let audio = new Audio('general-logo-13395.mp3');
-audio.volume = 0.01;
 
 let questionscoreCount = 0;
 let correctAnswerScoreCount = 0;

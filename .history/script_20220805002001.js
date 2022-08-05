@@ -70,7 +70,6 @@ let corrAnswer;
 // Create new audio objects
 // Code source: https://www.w3schools.com/jsref/met_audio_play.asp
 let audio = new Audio('general-logo-13395.mp3');
-audio.volume = 0.01;
 
 let questionscoreCount = 0;
 let correctAnswerScoreCount = 0;
@@ -330,7 +329,7 @@ answerButtons.addEventListener('click', (event) => {
 
         // Play "audioCorrectAnswer" if the answer is correct with reduced volume
         let audioCorrectAnswer = new Audio('Correct_answer.mp3');
-        audioCorrectAnswer.volume = 0.01;
+        audioCorrectAnswer.volume = 0.2;
         audioCorrectAnswer.play();
 
         // Increment total number of question
@@ -366,7 +365,7 @@ answerButtons.addEventListener('click', (event) => {
 
         // Play this audio if the answer is incorrect
         let audioWrongAnswer = new Audio('wrongAnswer.mp3');
-        audioWrongAnswer.volume = 0.01;
+        audioWrongAnswer.volume = 0.05;
         audioWrongAnswer.play();
 
         for (let i = arrayImages.length - 1; i > 0; i--) {

@@ -1,4 +1,4 @@
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) {
 
 	div#bottomPart{
 		display: flex;
@@ -171,10 +171,10 @@
 
 	/* Show answer button */
 	button#showAnswer {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		color: blue;
-		width: 15rem;
-		height: 3rem;
+		width: 18rem;
+		height: 4rem;
 		border: 0.54vh solid green;
 		border: 0.27vh solid yellow;
 		border-radius: 20rem;
@@ -191,10 +191,10 @@
 	}
 	/* Start game button */
 	button.startGame {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		color: blue;
-		width: 15rem;
-		height: 3rem;
+		width: 18rem;
+		height: 4rem;
 		border: 0.54vh solid green;
 		border: 0.27vh solid yellow;
 		border-radius: 20rem;
@@ -202,7 +202,7 @@
 		font-weight: bold;
 		background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
 		text-align: right;
-		padding: 0.2rem 1rem 1rem 1rem;
+		padding: 0.25rem 1rem 1rem 1rem;
 		transform: translateX(-4rem);
 	}
 	/* Start game button */
@@ -212,10 +212,10 @@
 	}
 	/* Reset button */
 	button.reset {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		color: blue;
-		width: 4.5rem;
-		height: 4.5rem;
+		width: 6rem;
+		height: 6rem;
 		border: 0.5rem solid green;
 		border: 0.15rem solid yellow;
 		border-radius: 20rem;
@@ -258,17 +258,19 @@
 	/* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
 	.question-number {
 		color: rgb(205, 200, 200);
-		/* display: flex;
+		display: flex;
 		flex-direction: column;
-		align-items: center; */
+		align-items: center;
 	}
 	.correct-answers {
+		
 		color: greenyellow;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	.wrong-answers {
+		
 		color: red;
 		display: flex;
 		flex-direction: column;
@@ -288,26 +290,13 @@
 		border-radius: 2rem;
 	}
 	div.labelsAndButtons {
-		font-size: 1.5rem;
+		/* font-size: 1.5rem; */
 		display: flex;
 		gap: 5rem;
 		position: relative;
 		left: 2rem;
 		top: -9rem;
 		align-items: center;
-	}
-
-
-	/* Set the wrong anser to red */
-	#questionNumber {
-		font-size: 1.5rem;
-		color: rgb(205, 200, 200);
-	}
-
-	/* Set the correct anser to green */
-	#correct {
-		font-size: 1.5rem;
-		color: greenyellow;
 	}
 	/* Set the wrong anser to red */
 	#wrong {
@@ -352,8 +341,8 @@
 		background-repeat: no-repeat;
 		position: relative;
 		/* z-index: 1; */
-		/* display: none; */
-	/* } */
+		display: none;
+	} */
 	/* Trophy in the win window */
 	/* .winImage {
 		position: relative;
@@ -4360,13 +4349,6 @@
 
 /* Samsung S 2e0 ultra */
 @media screen and (min-width: 412px) {
-
-
-	.bottomPart{
-		position: relative:
-		top: 2rem;
-	}
-
 	/*  Set h1 text to red */
 	h1 {
 		font-size: 1.5 rem;
@@ -4798,12 +4780,6 @@
 
 /* iPhone 12 Pro */
 @media screen and (min-width: 390px) {
-
-	.bottomPart{
-		position: relative:
-		top: 2rem;
-	}
-
 	/*  Set h1 text to red */
 	h1 {
 		font-size: 1.5 rem;
@@ -5521,7 +5497,9 @@
 		flex-direction: column;
 		/* align-items: center; */
 		position: relative;
-		top: 13.5rem;
+		top: 1rem;
+		transform: translateY(10rem);
+
 	}
 
 	/* Set the wrong anser to red */

@@ -1,10 +1,10 @@
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) {
 
-	div#bottomPart{
+	#bottomPart{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		transform: translateY(12rem);
+		transform: translateY(-6rem);
 	}
 
 	/*  Set h1 text to red */
@@ -21,7 +21,7 @@
 
 	/* The box containing the question */
 	.questionBox {
-		font-size: 1.5rem;
+		/* font-size: 2rem; */
 		color: rgb(0, 0, 0);
 		width: 85vw;
 		height: 6rem;
@@ -63,18 +63,18 @@
 		border-radius: 0.5rem;
 		padding: 0.5rem;
 		font-weight: 800;
-
+		
 	}
 	/* The show answer message box */
-	div.showAnswer {
-		font-size: 1.5em;
+	.showAnswer {
+		font-size: 1em;
 		padding: 0.5rem;
 		height: 3rem;
 		text-align: center;
 		display: flex;
 		justify-content: center;
 		position: relative;
-		top: 4.3rem;
+		top: 8.3rem;
 		color: honeydew;
 		visibility: hidden;
 		border: 0.1rem solid green;
@@ -82,13 +82,10 @@
 		background-color:rgb(2, 27, 3);
 	}
 	/*  Individual difficulty button */
-	button.difficulty {
-		font-size: 2rem;
-		text-align:center;
-		width: 5rem;
-		height: 1.5rem;
+	.difficulty {
+		width: 6rem;
 		justify-self: center;
-		padding: 0.1rem;
+		padding: 0.5rem;
 		background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
 		border: 0.2rem solid rgb(21, 139, 35);
 		border-radius: 5rem;
@@ -106,7 +103,7 @@
 	}
 
 	/*  Class containing all difficulty buttons */
-	div.difficulties-container {
+	.difficulties-container {
 		display: flex;
 		justify-content: space-evenly;
 	}
@@ -170,11 +167,11 @@
 	}
 
 	/* Show answer button */
-	button#showAnswer {
-		font-size: 1.5rem;
+	#showAnswer {
+		font-size: 2rem;
 		color: blue;
-		width: 15rem;
-		height: 3rem;
+		width: 18rem;
+		height: 4rem;
 		border: 0.54vh solid green;
 		border: 0.27vh solid yellow;
 		border-radius: 20rem;
@@ -190,11 +187,11 @@
 		color: white;
 	}
 	/* Start game button */
-	button.startGame {
-		font-size: 1.5rem;
+	.startGame {
+		font-size: 2rem;
 		color: blue;
-		width: 15rem;
-		height: 3rem;
+		width: 18rem;
+		height: 4rem;
 		border: 0.54vh solid green;
 		border: 0.27vh solid yellow;
 		border-radius: 20rem;
@@ -202,7 +199,7 @@
 		font-weight: bold;
 		background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
 		text-align: right;
-		padding: 0.2rem 1rem 1rem 1rem;
+		padding: 0.25rem 1rem 1rem 1rem;
 		transform: translateX(-4rem);
 	}
 	/* Start game button */
@@ -211,11 +208,11 @@
 		color: white;
 	}
 	/* Reset button */
-	button.reset {
-		font-size: 1.5rem;
+	.reset {
+		font-size: 2rem;
 		color: blue;
-		width: 4.5rem;
-		height: 4.5rem;
+		width: 6rem;
+		height: 6rem;
 		border: 0.5rem solid green;
 		border: 0.15rem solid yellow;
 		border-radius: 20rem;
@@ -233,7 +230,6 @@
 	}
 	/* Answers con */
 	.answersButtons {
-		font-size: 1.5rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -246,40 +242,42 @@
 		top: 1rem;
 	}
 	/* Class containing the three buttons (show answer, reset and start the game) */
-	div.threeBottomButtons {
+	.threeBottomButtons {
 		position: relative;
-		/* top: -10rem; */
+		top: -10rem;
 	}
 	/* All labels */
-	p.labels {
-		font-size: 2rem;
+	.labels {
+		font-size: 1.5rem;
 		transform: translateY(0.8rem);
 	}
 	/* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
 	.question-number {
+		font-size: 1.2rem;
 		color: rgb(205, 200, 200);
-		/* display: flex;
+		display: flex;
 		flex-direction: column;
-		align-items: center; */
+		align-items: center;
 	}
 	.correct-answers {
+		font-size: 1.5rem;
 		color: greenyellow;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	.wrong-answers {
+		font-size: 1.5rem;
 		color: red;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	/* The bottom boxes for total question number, correct answers and wrong answers */
-	div.bottombuttons {
-		font-size: 2rem;
+	.bottombuttons {
+		font-size: 1.5rem;
 		text-align: center;
 		width: 6rem;
-		height: 1.5rem;
 		border: 0.15rem solid green;
 		padding: 0.4rem;
 		position: relative;
@@ -287,34 +285,18 @@
 		color: honeydew;
 		border-radius: 2rem;
 	}
-	div.labelsAndButtons {
-		font-size: 1.5rem;
+	.labelsAndButtons {
+		/* font-size: 1.5rem; */
 		display: flex;
 		gap: 5rem;
-		position: relative;
-		left: 2rem;
-		top: -9rem;
+		transform: translate(2.7rem, -11rem);
 		align-items: center;
-	}
-
-
-	/* Set the wrong anser to red */
-	#questionNumber {
-		font-size: 1.5rem;
-		color: rgb(205, 200, 200);
-	}
-
-	/* Set the correct anser to green */
-	#correct {
-		font-size: 1.5rem;
-		color: greenyellow;
 	}
 	/* Set the wrong anser to red */
 	#wrong {
 		font-size: 1.5rem;
 		color: rgb(255, 0, 0);
 	}
-
 	/* Set the correct anser to green */
 	#correct {
 		font-size: 1.5rem;
@@ -339,7 +321,7 @@
 		background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
 	}
 	/* Win window */
-	/* .win {
+	.win {
 		margin: 0 auto;
 		background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
 		height: 100vh;
@@ -352,19 +334,19 @@
 		background-repeat: no-repeat;
 		position: relative;
 		/* z-index: 1; */
-		/* display: none; */
-	/* } */
+		display: none;
+	}
 	/* Trophy in the win window */
-	/* .winImage {
+	.winImage {
 		position: relative;
 		top: 16.27vh;
 		height: 27.12vh;
 		width: 27.12vh;
 		border-radius: 21.69vh;
 		border: 0.81vh double rgb(10, 238, 29);
-	} */
+	}
 	/* "Congratulations!" in the win window */
-	/* #winPar1 {
+	#winPar1 {
 		position: absolute;
 		right: 4.07vh;
 		width: 54.24vh;
@@ -372,19 +354,19 @@
 		top: -30.24vh;
 		color: rgb(6, 240, 18);
 		text-shadow: 0 0 0.27vh rgb(249, 8, 8), 0 0 0.54vh rgb(223, 9, 9), 0 0 1.14vh rgb(233, 46, 13), 0 0 2.22vh rgb(255, 30, 0), 0 0 2.49vh rgb(255, 0, 0);
-		position: relative; */
+		position: relative;
 		/* left: -5.37vh; */
-	/* } */
+	}
 	/* The message below the trophy */
-	/* #winPar2 {
+	#winPar2 {
 		position: relative;
 		top: 2.71vh;
 		color: rgb(6, 240, 6);
 		text-shadow: 0 0 0.27vh rgb(249, 8, 8), 0 0 0.54vh rgb(223, 9, 9), 0 0 1.14vh rgb(233, 46, 13), 0 0 2.22vh rgb(255, 30, 0), 0 0 2.49vh rgb(255, 0, 0);
 		position: relative;
-	} */
+	}
 	/* The reset button in the win window */
-	/* .winReset {
+	.winReset {
 		color: blue;
 		width: 8vh;
 		height: 8vh;
@@ -394,18 +376,18 @@
 		font-weight: bold;
 		background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
 		position: absolute;
-		top: 68vh; */
+		top: 68vh;
 		/* left: 18.31vh; */
-		/* z-index: 1;
-	} */
+		z-index: 1;
+	}
 	/* Change the color of win reset button in win window when the button is hovered over. */
-	/* .winReset:hover {
+	.winReset:hover {
 		background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
 		color: white;
-	} */
+	}
 	/* Lose window */
-	/* .lose { */
-		/* border: 0.54vh solid rgb(14, 1, 2);
+	.lose {
+		border: 0.54vh solid rgb(14, 1, 2);
 		border-radius: 2.71vh;
 		background-image: linear-gradient(rgb(174, 196, 174), rgb(158, 179, 110));
 		width: 43.66vh;
@@ -417,13 +399,13 @@
 		background-image: url("trivia_image.jpeg");
 		background-size: cover;
 		background-repeat: no-repeat;
-		position: relative; */
+		position: relative;
 		/* left: -89.5vh; */
-		/* z-index: -1;
-		display: none; */
-	/* } */
+		z-index: -1;
+		display: none;
+	}
 	/* The message in the lose window */
-	/* #losePar {
+	#losePar {
 		position: relative;
 		top: -27.12vh;
 		color: rgb(240, 33, 6);
@@ -431,11 +413,11 @@
 		position: relative;
 		display: flex;
 		justify-content: center;
-		top: 10vh; */
+		top: 10vh;
 		/* padding: 0.27vh 0.27vh; */
-	/* } */
+	}
 	/* Reset button in lose window */
-	/* .loseReset {
+	.loseReset {
 		color: blue;
 		width: 8vh;
 		height: 8vh;
@@ -445,15 +427,15 @@
 		font-weight: bold;
 		background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
 		position: absolute;
-		top: 68vh; */
+		top: 68vh;
 		/* left: 18.31vh; */
-		/* z-index: -1;
-	} */
+		z-index: -1;
+	}
 	/* Change the color of lose button when in the lose window when the button is hovered over */
-	/* .loseReset:hover {
+	.loseReset:hover {
 		background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
 		color: white;
-	} */
+	}
 
 	body {
 		font-family: 'Roboto', sans-serif;
@@ -4360,13 +4342,6 @@
 
 /* Samsung S 2e0 ultra */
 @media screen and (min-width: 412px) {
-
-
-	.bottomPart{
-		position: relative:
-		top: 2rem;
-	}
-
 	/*  Set h1 text to red */
 	h1 {
 		font-size: 1.5 rem;
@@ -4798,12 +4773,6 @@
 
 /* iPhone 12 Pro */
 @media screen and (min-width: 390px) {
-
-	.bottomPart{
-		position: relative:
-		top: 2rem;
-	}
-
 	/*  Set h1 text to red */
 	h1 {
 		font-size: 1.5 rem;
@@ -5521,7 +5490,9 @@
 		flex-direction: column;
 		/* align-items: center; */
 		position: relative;
-		top: 13.5rem;
+		top: 1rem;
+		transform: translateY(10rem);
+
 	}
 
 	/* Set the wrong anser to red */

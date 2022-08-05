@@ -296,19 +296,6 @@
 		top: -9rem;
 		align-items: center;
 	}
-
-
-	/* Set the wrong anser to red */
-	#questionNumber {
-		font-size: 1.5rem;
-		color: rgb(205, 200, 200);
-	}
-
-	/* Set the correct anser to green */
-	#correct {
-		font-size: 1.5rem;
-		color: greenyellow;
-	}
 	/* Set the wrong anser to red */
 	#wrong {
 		font-size: 1.5rem;
@@ -4360,13 +4347,6 @@
 
 /* Samsung S 2e0 ultra */
 @media screen and (min-width: 412px) {
-
-
-	.bottomPart{
-		position: relative:
-		top: 2rem;
-	}
-
 	/*  Set h1 text to red */
 	h1 {
 		font-size: 1.5 rem;
@@ -4798,12 +4778,6 @@
 
 /* iPhone 12 Pro */
 @media screen and (min-width: 390px) {
-
-	.bottomPart{
-		position: relative:
-		top: 2rem;
-	}
-
 	/*  Set h1 text to red */
 	h1 {
 		font-size: 1.5 rem;
@@ -5521,7 +5495,9 @@
 		flex-direction: column;
 		/* align-items: center; */
 		position: relative;
-		top: 13.5rem;
+		top: 1rem;
+		transform: translateY(10rem);
+
 	}
 
 	/* Set the wrong anser to red */
