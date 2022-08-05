@@ -28,7 +28,7 @@ let body = document.querySelector('body');
 let category = document.querySelector('.category');
 
 // This will hold the question
-let question = document.querySelector('.card-body');
+let question = document.querySelector('#questionBox');
 
 // This is for all response buttons
 let answerButtons = document.querySelector('.answersButtons');

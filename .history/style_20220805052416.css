@@ -3524,7 +3524,7 @@
 		top: 2rem;
 	}
 	/* The window with all elements */
-	.containerBox {
+	div.containerBox {
 		transform: translateY(-0.5rem);
 		margin: 0 auto;
 		display: flex;
@@ -3776,7 +3776,7 @@
 		flex-direction: column;
 		/* align-items: center; */
 		position: relative;
-		top: 14.5rem;
+		top: 20rem;
 	}
 
 	/* Set the wrong anser to red */
