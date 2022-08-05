@@ -45,7 +45,7 @@
 	.category {
 		text-align: center;
 		height: 3.2rem;
-		width: 30vw;
+		width: 12rem;
 		position: relative;
 		background-color: rgb(205, 220, 209);
 		border-radius: 0.5rem;
@@ -212,8 +212,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
-		transform: translateY(-21.5rem);
+		gap: 0.5rem;
+		transform: translateY(-15rem);
 	}
 	/* Class containing the image and responses buttons */
 	.imgAndQuestions {
@@ -275,7 +275,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		transform: translateY(-8rem);
+		transform: translateY(-3rem);
 
 	}
 

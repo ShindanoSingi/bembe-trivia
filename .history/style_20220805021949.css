@@ -13,7 +13,7 @@
 	/* The box containing the question */
 	.questionBox {
 		color: rgb(0, 0, 0);
-		width: 89.5vw;
+		width: 90vw;
 		height: 5rem;
 		padding: 0rem 0.5rem;
 		display: flex;
@@ -45,7 +45,7 @@
 	.category {
 		text-align: center;
 		height: 3.2rem;
-		width: 30vw;
+		width: 12rem;
 		position: relative;
 		background-color: rgb(205, 220, 209);
 		border-radius: 0.5rem;
@@ -142,7 +142,7 @@
 		font-size: 1em;
 		padding: 0.5rem;
 		width: 80vw;
-		height: 4.5rem;
+		height: 3.5rem;
 		text-align: center;
 	}
 	/* Show answer button */
@@ -212,8 +212,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 1rem;
-		transform: translateY(-21.5rem);
+		gap: 0.5rem;
+		transform: translateY(-15rem);
 	}
 	/* Class containing the image and responses buttons */
 	.imgAndQuestions {
@@ -275,7 +275,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		transform: translateY(-8rem);
+		transform: translateY(-3rem);
 
 	}
 
