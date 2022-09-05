@@ -1,0 +1,954 @@
+
+/* iPhone 8 and smaller */
+@media screen and (min-width: 320px) {
+    /*  Set h1 text to red */
+    h1 {
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 0.05rem 0.05rem red;
+        transform: translateY(-0.5rem);
+    }
+
+    .div1 {
+        height: 2.5rem;
+    }
+    /* The box containing the question */
+    .questionBox {
+        color: rgb(0, 0, 0);
+        width: 96vw;
+        display: flex;
+        justify-content: center;
+        border: 0.02rem solid;
+        background-color: rgb(89, 156, 138);
+        text-align: center;
+        border-bottom-color: red;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 3rem;
+    }
+    /* The window with all elements */
+    .containerBox {
+        transform: translateY(-0.5rem);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    /* Label for category */
+    .labelCategory {
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        transform: translateY(0.8rem);
+    }
+    /* The catgory Box */
+    .category {
+        font-size: 14px;
+        text-align: center;
+        height: 3.2rem;
+        width: 30vw;
+        transform: translateY(0.1rem);
+        background-color: rgb(205, 220, 209);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        font-weight: 800;
+    }
+    /* The show answer message box */
+    .showAnswer {
+        padding-top: 0.5rem;
+        width: 95vw;
+        height: 2.5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 10rem;
+        color: honeydew;
+        visibility: hidden;
+        border: 0.1rem solid green;
+        border-radius: 0.5rem;
+        background-color:rgb(2, 27, 3);
+    }
+    /*  Individual difficulty button */
+    .difficulty {
+        background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
+        border: 0.2rem solid rgb(21, 139, 35);
+        border-radius: 1rem;
+        color: white;
+    }
+    .qCat {
+        font-size: 12px;
+        margin: 0.54vh;
+        display: flex;
+        justify-content: center;
+    }
+    .qDiff {
+        margin-top: -0.27vh;
+    }
+    /*  Class containing all difficulty buttons */
+    .difficulties-container {
+        display: flex;
+        justify-content: center;
+        border-color: green;
+        gap: 0.2rem;
+    }
+    /* The box containing difficulty buttons */
+    .qDifficultyBox {
+        width: 48vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border: 0.14vh solid green;
+        border-radius: 0.5rem;
+        background-color: rgb(65, 56, 8);
+        height: 3.2rem;
+        padding: 0.5rem;
+        color: white;
+        transform: translateY(2rem);
+    }
+    .category-and-difficulty-container {
+        display: flex;
+        gap: 5vw;
+        position: absolute;
+        left: 0.1rem;
+        top:7rem;
+        height: 3.2rem;
+    }
+    /* image */
+    img {
+        height: 14rem;
+        width: 95vw;
+        position: relative;
+        top: 2rem;
+        border: 0.15rem solid green;
+        border-radius: 0.5rem;
+    }
+    /* all response buttons */
+    .response {
+        border-color: green;
+        background-image: linear-gradient(rgb(173, 202, 9), rgb(214, 184, 14));
+        color: black;
+        border-radius: 0.5rem;
+    }
+    /* All response buttons */
+    .response:hover {
+        background-image: linear-gradient(rgb(32, 90, 165), rgb(72, 168, 192));
+    }
+    /* Individual responses */
+    #response1,
+    #response2,
+    #response3,
+    #response4 {
+        /* font-size: 1em; */
+        padding: 0.2rem;
+        width: 90vw;
+        height: 3rem;
+        text-align: center;
+    }
+
+    .answersButtons{
+        left: 0.7rem;
+        align-content: center;
+        position: absolute;
+        top: 17.6rem;
+    }
+
+    /* Show answer button */
+    #showAnswer {
+        font-size: 14px;
+        color: blue;
+        width: 35vw;
+        height: 2.5rem;
+        border: 0.54vh solid green;
+        border: 0.27vh solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        text-align: center;
+    }
+    #showAnswer:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Start game button */
+    .startGame {
+        font-size: 14px;
+        color: blue;
+        width: 35vw;
+        height: 2.5rem;
+        border: 0.54vh solid green;
+        border: 0.27vh solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        text-align: center;
+    }
+    /* Start game button */
+    .startGame:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Reset button */
+    .reset {
+        font-size: 1rem;
+        color: blue;
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 0.5rem solid green;
+        border: 0.15rem solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+    /* Reset button */
+    .reset:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Answers con */
+    .answersButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        transform: translateY(-15rem);
+    }
+    /* Class containing the image and responses buttons */
+    .imgAndQuestions {
+        position: absolute;
+        top: 15.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* All labels */
+    .labels {
+        font-size: 14px;
+        transform: translateY(0.6rem);
+    }
+    /* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
+    .question-number {
+        color: rgb(205, 200, 200);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .correct-answers {
+        color: greenyellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0rem 2vw;
+    }
+    .wrong-answers {
+        color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* The bottom boxes for total question number, correct answers and wrong answers */
+    .bottombuttons {
+        text-align: center;
+        width: 3rem;
+        border: 0.15rem solid green;
+        padding: 0.4rem;
+        position: relative;
+        background-color: black;
+        color: honeydew;
+        border-radius: 2rem;
+    }
+    .labelsAndButtons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 4rem;
+    }
+
+    #bottomPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 36.5rem;
+    }
+
+    /* Set the wrong anser to red */
+    #wrong {
+        color: rgb(255, 0, 0);
+    }
+    /* Set the correct anser to green */
+    #correct {
+        color: greenyellow;
+    }
+    #easy,
+    #medium,
+    #hard {
+        text-align: center;
+        font-size: 12px;
+    }
+    /* Change the color when "easy" button is hovered over */
+    #easy:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    /* Change the color when "easy" button is hovered over */
+    #medium:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    /* Change the color when "easy" button is hovered over */
+    #hard:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+
+    body {
+      background-color: darkblue;
+    }
+}
+
+/* iPhone 8 and smaller */
+@media screen and (min-width: 390px) {
+    /*  Set h1 text to red */
+    h1 {
+        font-size: 24px;
+        color: #fff;
+        text-shadow: 0.05rem 0.05rem red;
+        transform: translateY(-0.5rem);
+    }
+
+    .div1 {
+        height: 2.5rem;
+    }
+    /* The box containing the question */
+    .questionBox {
+        color: rgb(0, 0, 0);
+        width: 96vw;
+        display: flex;
+        justify-content: center;
+        border: 0.02rem solid;
+        background-color: rgb(89, 156, 138);
+        text-align: center;
+        border-bottom-color: red;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 3rem;
+    }
+    /* The window with all elements */
+    .containerBox {
+        transform: translateY(-0.5rem);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    /* Label for category */
+    .labelCategory {
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        transform: translateY(0.8rem);
+    }
+    /* The catgory Box */
+    .category {
+        font-size: 14px;
+        text-align: center;
+        height: 3.2rem;
+        width: 30vw;
+        transform: translateY(0.1rem);
+        background-color: rgb(205, 220, 209);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        font-weight: 800;
+    }
+    /* The show answer message box */
+    .showAnswer {
+        padding-top: 0.5rem;
+        width: 95vw;
+        height: 2.5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 10rem;
+        color: honeydew;
+        visibility: hidden;
+        border: 0.1rem solid green;
+        border-radius: 0.5rem;
+        background-color:rgb(2, 27, 3);
+    }
+    /*  Individual difficulty button */
+    .difficulty {
+        background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
+        border: 0.2rem solid rgb(21, 139, 35);
+        border-radius: 1rem;
+        color: white;
+    }
+    .qCat {
+        font-size: 12px;
+        margin: 0.54vh;
+        display: flex;
+        justify-content: center;
+    }
+    .qDiff {
+        margin-top: -0.27vh;
+    }
+    /*  Class containing all difficulty buttons */
+    .difficulties-container {
+        display: flex;
+        justify-content: center;
+        border-color: green;
+        gap: 0.2rem;
+    }
+    /* The box containing difficulty buttons */
+    .qDifficultyBox {
+        width: 48vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border: 0.14vh solid green;
+        border-radius: 0.5rem;
+        background-color: rgb(65, 56, 8);
+        height: 3.2rem;
+        padding: 0.5rem;
+        color: white;
+        transform: translateY(2rem);
+    }
+    .category-and-difficulty-container {
+        display: flex;
+        gap: 5vw;
+        position: absolute;
+        left: 0.1rem;
+        top:7rem;
+        height: 3.2rem;
+    }
+    /* image */
+    img {
+        height: 14rem;
+        width: 95vw;
+        position: relative;
+        top: 2rem;
+        border: 0.15rem solid green;
+        border-radius: 0.5rem;
+    }
+    /* all response buttons */
+    .response {
+        border-color: green;
+        background-image: linear-gradient(rgb(173, 202, 9), rgb(214, 184, 14));
+        color: black;
+        border-radius: 0.5rem;
+    }
+    /* All response buttons */
+    .response:hover {
+        background-image: linear-gradient(rgb(32, 90, 165), rgb(72, 168, 192));
+    }
+    /* Individual responses */
+    #response1,
+    #response2,
+    #response3,
+    #response4 {
+        /* font-size: 1em; */
+        padding: 0.2rem;
+        width: 90vw;
+        height: 3rem;
+        text-align: center;
+    }
+
+    .answersButtons{
+        left: 0.7rem;
+        align-content: center;
+        position: absolute;
+        top: 17.6rem;
+    }
+
+    /* Show answer button */
+    #showAnswer {
+        font-size: 14px;
+        color: blue;
+        width: 35vw;
+        height: 2.5rem;
+        border: 0.54vh solid green;
+        border: 0.27vh solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        text-align: center;
+    }
+    #showAnswer:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Start game button */
+    .startGame {
+        font-size: 14px;
+        color: blue;
+        width: 35vw;
+        height: 2.5rem;
+        border: 0.54vh solid green;
+        border: 0.27vh solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        text-align: center;
+    }
+    /* Start game button */
+    .startGame:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Reset button */
+    .reset {
+        font-size: 1rem;
+        color: blue;
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 0.5rem solid green;
+        border: 0.15rem solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+    /* Reset button */
+    .reset:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Answers con */
+    .answersButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        transform: translateY(-15rem);
+    }
+    /* Class containing the image and responses buttons */
+    .imgAndQuestions {
+        position: absolute;
+        top: 15.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* All labels */
+    .labels {
+        font-size: 16px;
+        transform: translateY(0.6rem);
+    }
+    /* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
+    .question-number {
+        color: rgb(205, 200, 200);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .correct-answers {
+        color: greenyellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0rem 2vw;
+    }
+    .wrong-answers {
+        color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* The bottom boxes for total question number, correct answers and wrong answers */
+    .bottombuttons {
+        text-align: center;
+        width: 3rem;
+        border: 0.15rem solid green;
+        padding: 0.4rem;
+        position: relative;
+        background-color: black;
+        color: honeydew;
+        border-radius: 2rem;
+    }
+    .labelsAndButtons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 4rem;
+    }
+
+    #bottomPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 38.5rem;
+    }
+
+    /* Set the wrong anser to red */
+    #wrong {
+        color: rgb(255, 0, 0);
+    }
+    /* Set the correct anser to green */
+    #correct {
+        color: greenyellow;
+    }
+    #easy,
+    #medium,
+    #hard {
+        text-align: center;
+        font-size: 12px;
+    }
+    /* Change the color when "easy" button is hovered over */
+    #easy:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    /* Change the color when "easy" button is hovered over */
+    #medium:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    /* Change the color when "easy" button is hovered over */
+    #hard:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+
+    body {
+      background-color: darkblue;
+    }
+}
+
+/* iPhone 8 and smaller */
+@media screen and (min-width: 760px) {
+    /*  Set h1 text to red */
+    h1 {
+        font-size: 30px;
+        color: #fff;
+        text-shadow: 0.05rem 0.05rem red;
+        transform: translateY(-0.5rem);
+    }
+
+    .div1 {
+        height: 3rem;
+    }
+    /* The box containing the question */
+    .questionBox {
+        color: rgb(0, 0, 0);
+        width: 98vw;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        border: 0.02rem solid;
+        background-color: rgb(89, 156, 138);
+        text-align: center;
+        border-bottom-color: red;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 4rem;
+    }
+    /* The window with all elements */
+    .containerBox {
+        transform: translateY(-0.5rem);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    /* Label for category */
+    .labelCategory {
+        font-size: 22px;
+        text-align: center;
+        color: white;
+        transform: translateY(0.8rem);
+    }
+    /* The catgory Box */
+    .category {
+        font-size: 20px;
+        text-align: center;
+        height: 4.5rem;
+        width: 40vw;
+        transform: translateY(0.1rem);
+        background-color: rgb(205, 220, 209);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        font-weight: 800;
+    }
+    /* The show answer message box */
+    .showAnswer {
+        padding-top: 0.5rem;
+        width: 98vw;
+        height: 4.5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 14.5rem;
+        color: honeydew;
+        visibility: hidden;
+        border: 0.1rem solid green;
+        border-radius: 0.5rem;
+        background-color:rgb(2, 27, 3);
+    }
+    /*  Individual difficulty button */
+    .difficulty {
+        background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
+        border: 0.2rem solid rgb(21, 139, 35);
+        border-radius: 1rem;
+        color: white;
+    }
+
+    button#easy, button#medium, button#hard{
+        font-size: 18px;
+        width: 8rem;
+    }
+
+    .qCat {
+        font-size: 18px;
+        margin: 0.54vh;
+        display: flex;
+        justify-content: center;
+    }
+    .qDiff {
+        margin-top: -0.27vh;
+    }
+    /*  Class containing all difficulty buttons */
+    .difficulties-container {
+        display: flex;
+        justify-content: center;
+        border-color: green;
+        gap: 0.5rem;
+    }
+    /* The box containing difficulty buttons */
+    .qDifficultyBox {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        border: 0.14vh solid green;
+        border-radius: 0.5rem;
+        background-color: rgb(65, 56, 8);
+        height: 4.5rem;
+        padding: 0.5rem;
+        color: white;
+        transform: translateY(3rem);
+    }
+    .category-and-difficulty-container {
+        display: flex;
+        gap: 7.8vw;
+        position: absolute;
+        top: 10rem;
+        height: 3.2rem;
+    }
+    /* image */
+    img {
+        height: 37vh;
+        width: 97vw;
+        position: relative;
+        top: 2rem;
+
+        border: 0.15rem solid green;
+        border-radius: 0.5rem;
+    }
+    /* all response buttons */
+    .response {
+        border-color: green;
+        background-image: linear-gradient(rgb(173, 202, 9), rgb(214, 184, 14));
+        color: black;
+        border-radius: 0.5rem;
+    }
+    /* All response buttons */
+    .response:hover {
+        background-image: linear-gradient(rgb(32, 90, 165), rgb(72, 168, 192));
+    }
+    /* Individual responses */
+    #response1,
+    #response2,
+    #response3,
+    #response4 {
+        /* font-size: 1em; */
+        padding: 0.5rem;
+        width: 90vw;
+        height: 4.5rem;
+        text-align: center;
+    }
+
+    /* Individual responses */
+    #response1,
+    #response2,
+    #response3{
+        margin-bottom: 0.5rem;
+    }
+
+    div.answersButtons{
+        display: flex;
+        flex-direction: column;
+        align-items; center;
+        position: absolute;
+        top: 17.9rem;
+    }
+
+    /* Show answer button */
+    #showAnswer {
+        font-size: 0.94rem;
+        color: blue;
+        width: 35vw;
+        height: 2.5rem;
+        border: 0.54vh solid green;
+        border: 0.27vh solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        text-align: center;
+        padding: 0.25rem 1rem 1rem 1rem;
+
+    }
+    #showAnswer:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Start game button */
+    .startGame {
+        font-size: 0.94rem;
+        color: blue;
+        width: 35vw;
+        height: 2.5rem;
+        border: 0.54vh solid green;
+        border: 0.27vh solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        text-align: center;
+        padding: 0.25rem 1rem 1rem 1rem;
+
+    }
+    /* Start game button */
+    .startGame:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Reset button */
+    .reset {
+        font-size: 1rem;
+        color: blue;
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 0.5rem solid green;
+        border: 0.15rem solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+    /* Reset button */
+    .reset:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Answers con */
+    .answersButtons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        transform: translateY(-15rem);
+    }
+    /* Class containing the image and responses buttons */
+    .imgAndQuestions {
+        position: absolute;
+        top: 22.5rem;
+    }
+
+    /* All labels */
+    .labels {
+        font-size: 14px;
+        transform: translateY(0.6rem);
+    }
+    /* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
+    .question-number {
+        color: rgb(205, 200, 200);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .correct-answers {
+        color: greenyellow;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrong-answers {
+        color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* The bottom boxes for total question number, correct answers and wrong answers */
+    .bottombuttons {
+        text-align: center;
+        width: 3rem;
+        border: 0.15rem solid green;
+        padding: 0.4rem;
+        position: relative;
+        background-color: black;
+        color: honeydew;
+        border-radius: 2rem;
+    }
+    .labelsAndButtons {
+        display: flex;
+        position: absolute;
+        bottom: 4.5rem;
+    }
+
+    #bottomPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 90vh;
+    }
+
+    /* Set the wrong anser to red */
+    #wrong {
+        color: rgb(255, 0, 0);
+    }
+    /* Set the correct anser to green */
+    #correct {
+        color: greenyellow;
+    }
+    #easy,
+    #medium,
+    #hard {
+        text-align: center;
+        font-size: 12px;
+    }
+    /* Change the color when "easy" button is hovered over */
+    #easy:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    /* Change the color when "easy" button is hovered over */
+    #medium:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    /* Change the color when "easy" button is hovered over */
+    #hard:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+
+    body {
+      background-color: darkblue;
+    }
+}
+
+
