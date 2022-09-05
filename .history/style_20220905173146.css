@@ -4224,7 +4224,7 @@
 }
 
 /* iPhone 8 and smaller */
-@media screen and (min-width: 2600px) {
+@media screen and (min-width: 2500px) {
     /*  Set h1 text to red */
     h1 {
         font-size: 46px;

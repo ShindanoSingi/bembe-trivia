@@ -4512,7 +4512,7 @@
     .labelsAndButtons {
         display: flex;
         position: absolute;
-        bottom: 7.5rem;
+        bottom: 4.5rem;
         margin-bottom: 1rem;
     }
     #questionNumber, #correct, #wrong {
@@ -4527,7 +4527,7 @@
         align-items: center;
         position: absolute;
         left: 63vw;
-        top: 67vh;
+        top: 63vh;
     }
 
     /* Set the wrong anser to red */
