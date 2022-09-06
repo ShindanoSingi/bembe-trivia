@@ -855,7 +855,7 @@
 
     /* All labels */
     .labels {
-        font-size: 16px;
+        font-size: 14px;
         transform: translateY(0.6rem);
     }
     /* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
