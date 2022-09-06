@@ -2947,7 +2947,7 @@
         height: 4.5rem;
         text-align: center;
         position: relative;
-        top: 25vh;
+        top: 24vh;
         color: honeydew;
         visibility: hidden;
         border: 0.1rem solid green;
@@ -3126,7 +3126,7 @@
     /* Class containing the image and responses buttons */
     .imgAndQuestions {
         position: absolute;
-        top: 51vh;
+        top: 49vh;
         left: 0.8vw;
     }
 
@@ -3185,8 +3185,8 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        left: 64vw;
-        top: 80vh;
+        left: 64.5vw;
+        top: 77vh;
     }
 
     /* Set the wrong anser to red */

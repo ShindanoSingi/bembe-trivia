@@ -2932,7 +2932,7 @@
         font-size: 20px;
         text-align: center;
         height: 4.5rem;
-        width: 34.5vw;
+        width: 35vw;
         transform: translateY(0.1rem);
         background-color: rgb(205, 220, 209);
         border-radius: 0.5rem;
@@ -2947,7 +2947,7 @@
         height: 4.5rem;
         text-align: center;
         position: relative;
-        top: 25vh;
+        top: 24vh;
         color: honeydew;
         visibility: hidden;
         border: 0.1rem solid green;
@@ -2985,7 +2985,7 @@
     }
     /* The box containing difficulty buttons */
     .qDifficultyBox {
-        width: 34.5vw;
+        width: 32vw;
         display: flex;
         flex-direction: column;
         gap: 0.2rem;
@@ -3126,7 +3126,7 @@
     /* Class containing the image and responses buttons */
     .imgAndQuestions {
         position: absolute;
-        top: 51vh;
+        top: 49vh;
         left: 0.8vw;
     }
 
@@ -3185,8 +3185,8 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        left: 64vw;
-        top: 80vh;
+        left: 64.5vw;
+        top: 75vh;
     }
 
     /* Set the wrong anser to red */
