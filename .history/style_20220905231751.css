@@ -631,7 +631,7 @@
         font-size: 24px;
         color: #fff;
         text-shadow: 0.05rem 0.05rem red;
-        transform: translateY(1vh);
+        transform: translateY(-0.5rem);
     }
 
     .div1 {
@@ -650,7 +650,7 @@
         border-bottom-color: red;
         border-radius: 0.5rem;
         position: absolute;
-        top: 10vh;
+        top: 3rem;
     }
     /* The window with all elements */
     .containerBox {
@@ -690,7 +690,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 28vh;
+        top: 10.5rem;
         color: honeydew;
         visibility: hidden;
         border: 0.1rem solid green;
@@ -738,7 +738,7 @@
         display: flex;
         gap: 9vw;
         position: absolute;
-        top:20vh;
+        top:7rem;
         height: 3.2rem;
     }
     /* image */
@@ -849,7 +849,7 @@
     /* Class containing the image and responses buttons */
     .imgAndQuestions {
         position: absolute;
-        top: 40vh;
+        top: 16rem;
         margin-bottom: 2rem;
     }
 
@@ -901,7 +901,7 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 85vh;
+        top: 37.5rem;
     }
 
     /* Set the wrong anser to red */
@@ -3056,6 +3056,7 @@
 
     /* Show answer button */
     #showAnswer {
+        font-size: 22px;
         height: 3rem;
         color: blue;
         width: 12vw;
@@ -3106,7 +3107,7 @@
 
 
     .startGame, .reset, #showAnswer{
-    font-size: 18px;
+    font-size: 20px;
     }
 
     /* Reset button */
@@ -3184,8 +3185,8 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        left: 66vw;
-        top: 71vh;
+        left: 64vw;
+        top: 45rem;
     }
 
     /* Set the wrong anser to red */
@@ -3217,35 +3218,6 @@
 
     body {
         background-color: darkblue;
-    }
-}
-
-@media (min-width: 1335px) and (max-width: 1336px) {
-
-    .div1 {
-        height: 8rem;
-    }
-
-    .questionBox {
-        width: 96vw;
-    }
-
-    .showAnswer {
-        position: relative;
-        top: 27vh;
-    }
-
-    .category {
-        height: 3.5rem;
-    }
-
-    #showAnswer, .startGame{
-        width: 10rem;
-    }
-
-    #bottomPart{
-        position: absolute;
-        top: 90vh;
     }
 }
 

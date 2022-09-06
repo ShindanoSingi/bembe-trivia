@@ -631,7 +631,7 @@
         font-size: 24px;
         color: #fff;
         text-shadow: 0.05rem 0.05rem red;
-        transform: translateY(1vh);
+        transform: translateY(-0.5rem);
     }
 
     .div1 {
@@ -650,7 +650,7 @@
         border-bottom-color: red;
         border-radius: 0.5rem;
         position: absolute;
-        top: 10vh;
+        top: 3rem;
     }
     /* The window with all elements */
     .containerBox {
