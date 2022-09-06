@@ -3274,7 +3274,7 @@
     .showAnswer {
         font-size: 20px;
         padding: 1.2rem;
-        width: 97.5vw;
+        width: 98vw;
         height: 4.5rem;
         text-align: center;
         position: relative;
@@ -3334,7 +3334,7 @@
         gap: 0.1rem;
         position: absolute;
         top: 35vh;
-        left: 62.5vw;
+        left: 74.6rem;
         height: 3.2rem;
     }
 
@@ -3382,7 +3382,7 @@
         flex-direction: column;
         align-content: center;
         position: absolute;
-        top: 12rem;
+        top: 13rem;
     }
 
     /* Show answer button */
@@ -3516,7 +3516,7 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        left: 64.5vw;
+        left: 63vw;
         top: 75vh;
     }
 
