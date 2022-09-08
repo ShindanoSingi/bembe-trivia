@@ -19,7 +19,7 @@ let difficultyButtons = document.querySelector('.difficulties-container');
 // helpButton.addEventListener('click', function () {
 //         document.querySelector('.instruction').style.display = 'block';
 //         document.querySelector('.instruction').style.zIndex = '100';
-
+    
 //     setTimeout(function () {
 //         document.querySelector('.instruction').style.display = 'hidden';
 //     }, 1000)

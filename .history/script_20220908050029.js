@@ -15,15 +15,19 @@ let answerButtons = document.querySelector('.answersButtons');
 // Define difficulty buttons
 let difficultyButtons = document.querySelector('.difficulties-container');
 
-// let helpButton = document.querySelector('.help');
-// helpButton.addEventListener('click', function () {
-//         document.querySelector('.instruction').style.display = 'block';
-//         document.querySelector('.instruction').style.zIndex = '100';
+let helpButton = document.querySelector('.help');
+helpButton.addEventListener('click', function () {
 
-//     setTimeout(function () {
-//         document.querySelector('.instruction').style.display = 'hidden';
-//     }, 1000)
-// })
+    setTimeout(function () {
+        document.querySelector('.instruction').style.display = 'block';
+        document.querySelector('.instruction').style.zIndex = '100';
+
+        setTimeout(function () {
+            document.querySelector('.instruction').style.display = 'hidden';
+        }, 1000)
+    
+})
+
 
 // Declaring individual difficulty buttons
 let easyButton = document.querySelector('#easy');

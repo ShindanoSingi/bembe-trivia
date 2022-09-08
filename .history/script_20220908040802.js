@@ -15,16 +15,6 @@ let answerButtons = document.querySelector('.answersButtons');
 // Define difficulty buttons
 let difficultyButtons = document.querySelector('.difficulties-container');
 
-// let helpButton = document.querySelector('.help');
-// helpButton.addEventListener('click', function () {
-//         document.querySelector('.instruction').style.display = 'block';
-//         document.querySelector('.instruction').style.zIndex = '100';
-
-//     setTimeout(function () {
-//         document.querySelector('.instruction').style.display = 'hidden';
-//     }, 1000)
-// })
-
 // Declaring individual difficulty buttons
 let easyButton = document.querySelector('#easy');
 let mediumButton = document.querySelector('#medium');
@@ -119,7 +109,7 @@ resetButton.addEventListener('click', () => {
 let startButton = () => {
 
     // Increament the score count.
-    // scoreCount++;
+    scoreCount++;
 
     // Select all responses buttons.
     let responses = document.querySelectorAll('.response');
@@ -189,6 +179,8 @@ difficultyButtons.addEventListener('click', e => {
     return difficulty;
 })
 
+
+
 // Play the game when the start game button is click.
 function play() {
 
@@ -250,7 +242,9 @@ answerButtons.addEventListener('click', (event) => {
 
         // Increment total number of question
         scoreCount++;
+
         totNumQuestionsBox.innerText = scoreCount;
+
         // Increament the the number of correct answers.
         correctAnswerScoreCount++;
 
@@ -296,7 +290,7 @@ answerButtons.addEventListener('click', (event) => {
 
         // Incremment scoreCount
         scoreCount++;
-        totNumQuestionsBox.innerText = scoreCount;
+
         // Increament the the number of incorrect answers.
         wrongAnswerscoreCount++;
 
@@ -318,6 +312,8 @@ function refreshWindow() {
 
 // This function runs when the player calls for the next question.
 function nextQuestion() {
+
+
     // Source: https://www.w3schools.com/jsref/jsref_random.asp
     let randomQuestions = Math.floor(Math.random() * 10 + 9);
 

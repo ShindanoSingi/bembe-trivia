@@ -1,4 +1,25 @@
+// Declaring variables
 
+// Capture win window
+let winWindow = document.querySelector('.win');
+
+// Declae win reset button
+let winResetButton = document.querySelector('.winReset');
+
+// define lose reset button
+let loseResetButton = document.querySelector('.loseReset');
+
+// define lose window
+let loseWindow = document.querySelector('.lose');
+
+// define win image
+// let winImage = document.querySelector('.winImage')
+
+// define a message if the payer loses the game
+let loseMessage = document.querySelector('#losePar');
+
+// define
+let video = document.querySelector('#myVideo');
 
 // Get Body content
 let body = document.querySelector('body');
@@ -15,15 +36,11 @@ let answerButtons = document.querySelector('.answersButtons');
 // Define difficulty buttons
 let difficultyButtons = document.querySelector('.difficulties-container');
 
-// let helpButton = document.querySelector('.help');
-// helpButton.addEventListener('click', function () {
-//         document.querySelector('.instruction').style.display = 'block';
-//         document.querySelector('.instruction').style.zIndex = '100';
+// Define image
+// let image = document.querySelector('img');
 
-//     setTimeout(function () {
-//         document.querySelector('.instruction').style.display = 'hidden';
-//     }, 1000)
-// })
+// Define audio button
+let audioButton = document.querySelector('.audio');
 
 // Declaring individual difficulty buttons
 let easyButton = document.querySelector('#easy');
@@ -61,7 +78,7 @@ let scoreCount = 0;
 let clear = '';
 let difficulty = '';
 
-// Set winning scoreCo
+// Set winning scoreCount
 let winningscoreCount = 6;
 
 let highscoreCount = 0;
@@ -119,7 +136,7 @@ resetButton.addEventListener('click', () => {
 let startButton = () => {
 
     // Increament the score count.
-    // scoreCount++;
+    scoreCount++;
 
     // Select all responses buttons.
     let responses = document.querySelectorAll('.response');
@@ -189,6 +206,8 @@ difficultyButtons.addEventListener('click', e => {
     return difficulty;
 })
 
+
+
 // Play the game when the start game button is click.
 function play() {
 
@@ -250,7 +269,7 @@ answerButtons.addEventListener('click', (event) => {
 
         // Increment total number of question
         scoreCount++;
-        totNumQuestionsBox.innerText = scoreCount;
+
         // Increament the the number of correct answers.
         correctAnswerScoreCount++;
 
@@ -296,7 +315,7 @@ answerButtons.addEventListener('click', (event) => {
 
         // Incremment scoreCount
         scoreCount++;
-        totNumQuestionsBox.innerText = scoreCount;
+
         // Increament the the number of incorrect answers.
         wrongAnswerscoreCount++;
 
@@ -318,6 +337,8 @@ function refreshWindow() {
 
 // This function runs when the player calls for the next question.
 function nextQuestion() {
+
+
     // Source: https://www.w3schools.com/jsref/jsref_random.asp
     let randomQuestions = Math.floor(Math.random() * 10 + 9);
 

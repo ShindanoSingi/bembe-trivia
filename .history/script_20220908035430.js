@@ -1,4 +1,25 @@
+// Declaring variables
 
+// Capture win window
+let winWindow = document.querySelector('.win');
+
+// Declae win reset button
+let winResetButton = document.querySelector('.winReset');
+
+// define lose reset button
+let loseResetButton = document.querySelector('.loseReset');
+
+// define lose window
+let loseWindow = document.querySelector('.lose');
+
+// define win image
+// let winImage = document.querySelector('.winImage')
+
+// define a message if the payer loses the game
+let loseMessage = document.querySelector('#losePar');
+
+// define
+let video = document.querySelector('#myVideo');
 
 // Get Body content
 let body = document.querySelector('body');
@@ -15,15 +36,11 @@ let answerButtons = document.querySelector('.answersButtons');
 // Define difficulty buttons
 let difficultyButtons = document.querySelector('.difficulties-container');
 
-// let helpButton = document.querySelector('.help');
-// helpButton.addEventListener('click', function () {
-//         document.querySelector('.instruction').style.display = 'block';
-//         document.querySelector('.instruction').style.zIndex = '100';
+// Define image
+// let image = document.querySelector('img');
 
-//     setTimeout(function () {
-//         document.querySelector('.instruction').style.display = 'hidden';
-//     }, 1000)
-// })
+// Define audio button
+let audioButton = document.querySelector('.audio');
 
 // Declaring individual difficulty buttons
 let easyButton = document.querySelector('#easy');
@@ -61,7 +78,7 @@ let scoreCount = 0;
 let clear = '';
 let difficulty = '';
 
-// Set winning scoreCo
+// Set winning scoreCount
 let winningscoreCount = 6;
 
 let highscoreCount = 0;
@@ -77,29 +94,29 @@ let url;
 // Array of all Images/jpg
 // https://www.pexels.com/search/environment/
 // let arrayImages = [];
-// arrayImages.push('pexels-ákos-szabó-440731.jpg');
-// arrayImages.push('pexels-atikul-haque-rafat-679598.jpg');
-// arrayImages.push('pexels-felix-mittermeier-957024.jpg');
-// arrayImages.push('pexels-ian-turnell-709552.jpg');
-// arrayImages.push('pexels-karolina-grabowska-5750182.jpg');
-// arrayImages.push('pexels-mahima-1250260.jpg');
-// arrayImages.push('pexels-mali-maeder-142497.jpg');
-// arrayImages.push('pexels-matthias-cooper-580900.jpg');
-// arrayImages.push('pexels-min-an-1131458.jpg');
-// arrayImages.push('pexels-minamarie-michell-570041.jpg');
-// arrayImages.push('pexels-olya-kobruseva-5236397.jpg');
-// arrayImages.push('pexels-pixabay-33044.jpg');
-// arrayImages.push('pexels-pixabay-221012.jpg');
-// arrayImages.push('pexels-pixabay-235615.jpg');
-// arrayImages.push('pexels-pixabay-259280.jpg');
-// arrayImages.push('pexels-pixabay-302804.jpg');
-// arrayImages.push('pexels-pixabay-414090.jpg');
-// arrayImages.push('pexels-pixabay-459225.jpg');
-// arrayImages.push('pexels-pixabay-459225.jpg');
-// arrayImages.push('pexels-pixabay-460621.jpg');
-// arrayImages.push('pexels-scott-webb-1048033.jpg');
-// arrayImages.push('pexels-skitterphoto-9198.jpg');
-// arrayImages.push('pexels-sohail-na-807598.jpg');
+arrayImages.push('pexels-ákos-szabó-440731.jpg');
+arrayImages.push('pexels-atikul-haque-rafat-679598.jpg');
+arrayImages.push('pexels-felix-mittermeier-957024.jpg');
+arrayImages.push('pexels-ian-turnell-709552.jpg');
+arrayImages.push('pexels-karolina-grabowska-5750182.jpg');
+arrayImages.push('pexels-mahima-1250260.jpg');
+arrayImages.push('pexels-mali-maeder-142497.jpg');
+arrayImages.push('pexels-matthias-cooper-580900.jpg');
+arrayImages.push('pexels-min-an-1131458.jpg');
+arrayImages.push('pexels-minamarie-michell-570041.jpg');
+arrayImages.push('pexels-olya-kobruseva-5236397.jpg');
+arrayImages.push('pexels-pixabay-33044.jpg');
+arrayImages.push('pexels-pixabay-221012.jpg');
+arrayImages.push('pexels-pixabay-235615.jpg');
+arrayImages.push('pexels-pixabay-259280.jpg');
+arrayImages.push('pexels-pixabay-302804.jpg');
+arrayImages.push('pexels-pixabay-414090.jpg');
+arrayImages.push('pexels-pixabay-459225.jpg');
+arrayImages.push('pexels-pixabay-459225.jpg');
+arrayImages.push('pexels-pixabay-460621.jpg');
+arrayImages.push('pexels-scott-webb-1048033.jpg');
+arrayImages.push('pexels-skitterphoto-9198.jpg');
+arrayImages.push('pexels-sohail-na-807598.jpg');
 
 // for correct and wrong answer song; source code:
 // https://www.dreamstime.com/stock-music-sound-effect/wrong-answer-answer.html
@@ -119,7 +136,7 @@ resetButton.addEventListener('click', () => {
 let startButton = () => {
 
     // Increament the score count.
-    // scoreCount++;
+    scoreCount++;
 
     // Select all responses buttons.
     let responses = document.querySelectorAll('.response');
@@ -189,6 +206,8 @@ difficultyButtons.addEventListener('click', e => {
     return difficulty;
 })
 
+
+
 // Play the game when the start game button is click.
 function play() {
 
@@ -250,7 +269,7 @@ answerButtons.addEventListener('click', (event) => {
 
         // Increment total number of question
         scoreCount++;
-        totNumQuestionsBox.innerText = scoreCount;
+
         // Increament the the number of correct answers.
         correctAnswerScoreCount++;
 
@@ -266,7 +285,7 @@ answerButtons.addEventListener('click', (event) => {
         }
 
         // Play a random video
-        // image.src = arrayImages[1];
+        image.src = arrayImages[1];
 
         // Set the background of the correct answer to green
         event.target.style.backgroundImage = `linear-gradient(rgb(0, 255, 106),
@@ -283,20 +302,20 @@ answerButtons.addEventListener('click', (event) => {
         let audioWrongAnswer = new Audio('wrongAnswer.mp3');
 
 
-        // for (let i = arrayImages.length - 1; i > 0; i--) {
-        //     let j = Math.floor(Math.random() * (i + 1))
+        for (let i = arrayImages.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1))
 
-        //     let tempNum = arrayImages[i];
-        //     arrayImages[i] = arrayImages[j];
-        //     arrayImages[j] = tempNum;
-        // }
+            let tempNum = arrayImages[i];
+            arrayImages[i] = arrayImages[j];
+            arrayImages[j] = tempNum;
+        }
 
         // Play a random video
-        // image.src = arrayImages[0];
+        image.src = arrayImages[0];
 
         // Incremment scoreCount
         scoreCount++;
-        totNumQuestionsBox.innerText = scoreCount;
+
         // Increament the the number of incorrect answers.
         wrongAnswerscoreCount++;
 
@@ -318,6 +337,8 @@ function refreshWindow() {
 
 // This function runs when the player calls for the next question.
 function nextQuestion() {
+
+
     // Source: https://www.w3schools.com/jsref/jsref_random.asp
     let randomQuestions = Math.floor(Math.random() * 10 + 9);
 
