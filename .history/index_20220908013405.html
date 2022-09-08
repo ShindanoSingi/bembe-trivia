@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Trivia Game</title>
+    </head>
+
+    <body class="">
+        <div class="containerBox max-h-[100vh] my-2 flex flex-col gap-[3rem]">
+            <h1 class="text-center text-3xl relative top-4" >TRIVIA GAME</h1>
+            <div class="questionBox text-center w-[94vw] md:text-lg h-[6.5rem] p-2 md:p-2 mx-auto rounded-lg">
+                Please select one of question difficulties, then click on start the game button.
+            </div>
+            <div class="category-and-difficulty-container items-center justify-around flex">
+                <div class="category-container w-[38vw] md:h-[6rem] h-[4.5rem] bg-[#CDDCD1] flex items-center flex-col py-[0.3rem] rounded-lg">
+                    <div class="labelCategory text-sm md:text-lg font-bold md:font-bold text-black">CATEGORY</div>
+                    <div class="category text-sm md:text-lg text-center p-1 rounded-lg">
+                        Loading category...
+                    </div>
+                </div>
+                <div class="qDifficultyBox w-[50vw] pb-1 rounded-lg items-center flex h-[4.5rem] md:h-[6rem] justify-around flex-col">
+                        <div id="question" class="qCat md:text-lg text-sm">QUESTION DIFFICULTY</div>
+                        <div class="difficulties-container md:flex md:space-x-6 flex gap-1">
+                            <button class="difficulty px-1.5 md:w-[6rem] text-sm md:text-lg rounded-full" id="easy">Easy</button>
+                            <button class="difficulty md:w-[6rem] px-1.5 rounded-full md:text-lg text-sm" id="medium">Medium</button>
+                            <button class="difficulty md:w-[6rem] px-1.5 text-sm md:text-lg rounded-full" id="hard">Hard</button>
+                    </div>
+                </div>
+            </div>
+            <div class="imgAndQuestions">
+                <img class="w-[94vw] h-[25rem] mx-auto" src="pexels-skitterphoto-9198.jpg" alt="nature image">
+                <div class="answersButtons absolute md:absolute md:bottom-[15.5rem] bottom-[17.2rem] ml-[5vw] flex space-y-2 items-center  flex-col">
+                    <button class="showAnswer md:text-lg w-[90vw] p-1 absolute bottom-[17rem] mx-auto text-sm h-[5rem]">Loading the answer...</button>
+                    <button class="response md:text-lg w-[90vw] p-1 text-center text-md h-[5rem]" id="response1">Loading the answer...</button>
+                    <button class="response md:text-lg w-[90vw] p-1 text-md h-[5rem]" id="response2">Loading the answer...</button>
+                    <button class="response md:text-lg w-[90vw] p-1 text-md h-[5rem]" id="response3">Loading the answer...</button>
+                    <button class="response md:text-lg w-[90vw] p-1 text-md h-[5rem]" id="response4">Loading the answer...</button>
+                    </div>
+                </div>
+
+            <div id="bottomPart" class="flex  mx-auto flex-col items-center gap-4">
+                <div class="labelsAndButtons relative left-1 flex space-x-2">
+                    <div class="question-number flex flex-col items-center">
+                        <p class="labels md:text-lg pb-1" id="labelQ">Total</p>
+                        <div class="bottombuttons md:w-[8rem] md:text-lg w-[5rem] text-center py-1" id="questionNumber">0</div>
+                    </div>
+                    <div class="correct-answers md:text-lg flex flex-col items-center">
+                        <p class="labels pb-1" id="labelC">Correct</p>
+                        <div class="bottombuttons md:text-lg w-[5rem] md:w-[8rem] text-center py-1" id="correct">0</div>
+                    </div>
+                    <div class="wrong-answers md:text-lg flex flex-col items-center">
+                        <p class="labels pb-1" id="labelW">Wrong</p>
+                        <div class="bottombuttons md:w-[8rem] md:text-lg w-[5rem] text-center py-1" id="wrong">0</div>
+                    </div>
+                    <div class="timerQuestionCorrectWrong"></div>
+                </div>
+                <div class="threeBottomButtons">
+                    <button class="w-[8rem] text-lg md:text-2xl md:w-48 py-1" id="showAnswer">Show Answer</button>
+                    <button class="reset text-lg p-1 md:w-[5rem] md:h-[5rem] w-[3.5rem] h-[3.5rem] rounded-full">Reset</button>
+                    <button class="startGame text-lg w-[8rem] md:text-2xl md:w-48 py-1">Start Game</button>
+                </div>
+            </div>
+            </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
+

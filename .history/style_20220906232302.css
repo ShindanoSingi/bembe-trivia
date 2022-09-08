@@ -1,0 +1,163 @@
+
+/* iPhone 8 and smaller */
+@media screen and (min-width: 320px) {
+    /*  Set h1 text to red */
+    h1 {
+        color: #fff;
+        text-shadow: 0.05rem 0.05rem red;
+    }
+
+    /* The box containing the question */
+    .questionBox {
+        color: rgb(0, 0, 0);
+        border: 0.02rem solid;
+        background-color: rgb(89, 156, 138);
+        text-align: center;
+        border-bottom-color: red;
+    }
+
+    /* Label for category */
+    .labelCategory {
+        text-align: center;
+        color: white;
+    }
+    /* The catgory Box */
+    .category {
+        background-color: rgb(205, 220, 209);
+    }
+    /* The show answer message box */
+    .showAnswer {
+        color: honeydew;
+        visibility: hidden;
+        border: 0.1rem solid green;
+        border-radius: 0.5rem;
+        background-color:rgb(2, 27, 3);
+    }
+    /*  Individual difficulty button */
+    .difficulty {
+        background-image: linear-gradient(rgb(16, 221, 142), rgb(4, 58, 7));
+        border: 0.2rem solid rgb(21, 139, 35);
+        color: white;
+    }
+
+    /*  Class containing all difficulty buttons */
+    .difficulties-container {
+        border-color: green;
+    }
+    /* The box containing difficulty buttons */
+    .qDifficultyBox {
+        border: 0.14vh solid green;
+        background-color: rgb(65, 56, 8);
+        color: white;
+    }
+
+    /* image */
+    img {
+        border: 0.15rem solid green;
+        border-radius: 0.5rem;
+    }
+    /* all response buttons */
+    .response {
+        border-color: green;
+        background-image: linear-gradient(rgb(173, 202, 9), rgb(214, 184, 14));
+        color: black;
+        border-radius: 0.5rem;
+    }
+    /* All response buttons */
+    .response:hover {
+        background-image: linear-gradient(rgb(32, 90, 165), rgb(72, 168, 192));
+    }
+
+    /* Show answer button */
+    #showAnswer {
+        color: blue;
+        border: 0.54vh solid green;
+        border: 0.27vh solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+    }
+    #showAnswer:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Start game button */
+    .startGame {
+        color: blue;
+        border: 0.54vh solid green;
+        border: 0.27vh solid yellow;
+        border-radius: 20rem;
+        font-family: cursive;
+        font-weight: bold;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+    }
+    /* Start game button */
+    .startGame:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+    /* Reset button */
+    .reset {
+        text-align: center;
+        color: blue;
+        border: 0.5rem solid green;
+        border: 0.15rem solid yellow;
+        font-family: cursive;
+        background-image: radial-gradient(rgb(25, 201, 133), rgb(6, 99, 10));
+    }
+    /* Reset button */
+    .reset:hover {
+        background-image: radial-gradient(rgb(201, 25, 25), rgb(93, 99, 6));
+        color: white;
+    }
+
+    /* Class containing the 3 bottom labels  (total questions, correct answers and wrong answers) */
+    .question-number {
+        color: rgb(205, 200, 200);
+    }
+
+    .correct-answers {
+        color: greenyellow;
+    }
+
+    .wrong-answers {
+        color: red;
+    }
+
+    /* The bottom boxes for total question number, correct answers and wrong answers */
+    .bottombuttons {
+        border: 0.15rem solid green;
+        background-color: black;
+        color: honeydew;
+        border-radius: 2rem;
+    }
+
+    /* Set the wrong anser to red */
+    #wrong {
+        color: rgb(255, 0, 0);
+    }
+    /* Set the correct anser to green */
+    #correct {
+        color: greenyellow;
+    }
+
+    /* Change the color when "easy" button is hovered over */
+    #easy:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    /* Change the color when "easy" button is hovered over */
+    #medium:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    /* Change the color when "easy" button is hovered over */
+    #hard:hover {
+        background-image: linear-gradient(rgb(202, 9, 9), rgb(214, 184, 14));
+    }
+    
+    body {
+      background-color: darkblue;
+    }
+}
+
+

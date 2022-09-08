@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Trivia Game</title>
+    </head>
+
+    <body class="">
+        <div class="containerBox max-h-[100vh] my-2 flex flex-col gap-[8vh]">
+            <h1 class="text-center text-xl" >TRIVIA GAME</h1>
+            <div class="questionBox w-[95vw] h-[5rem] p-1 mx-auto rounded-lg">
+                Please select one of question difficulties, then click on start the game button.
+            </div>
+            <div class="category-and-difficulty-container items-center justify-around flex">
+                <div class="category-container w-[38vw] h-[4.5rem] bg-[#CDDCD1] flex items-center flex-col py-[0.3rem] rounded-lg">
+                    <div class="labelCategory text-sm font-bold text-black">CATEGORY</div>
+                    <div class="category text-sm text-center p-1 rounded-lg">
+                        Loading category...
+                    </div>
+                </div>
+                <div class="qDifficultyBox w-[50vw] pb-1 rounded-lg items-center flex h-[4.5rem] justify-around flex-col">
+                        <div id="question" class="qCat text-sm">QUESTION DIFFICULTY</div>
+                        <div class="difficulties-container flex gap-1">
+                            <button class="difficulty px-1.5 text-sm rounded-full" id="easy">Easy</button>
+                            <button class="difficulty px-1.5 rounded-full text-sm" id="medium">Medium</button>
+                            <button class="difficulty px-1.5 text-sm rounded-full" id="hard">Hard</button>
+                    </div>
+                </div>
+            </div>
+            <div class="imgAndQuestions">
+                <img class="w-[95vw] h-[20rem] mx-auto" src="pexels-skitterphoto-9198.jpg" alt="nature image">
+                <div class="answersButtons absolute bottom-[10vh] ml-[5vw] flex space-y-2 items-center  flex-col">
+                    <button class="showAnswer w-[90vw] p-1 absolute bottom-[17rem] mx-auto text-sm h-[4rem]">Loading the answer...</button>
+                    <button class="response w-[90vw] p-1 text-center text-md h-[4rem]" id="response1">Loading the answer...</button>
+                    <button class="response w-[90vw] p-1 text-md h-[4rem]" id="response2">Loading the answer...</button>
+                    <button class="response w-[90vw] p-1 text-md h-[4rem]" id="response3">Loading the answer...</button>
+                    <button class="response w-[90vw] p-1 text-md h-[4rem]" id="response4">Loading the answer...</button>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomPart" class="flex  mx-auto flex-col items-center gap-2">
+                <div class="labelsAndButtons flex">
+                    <div class="question-number flex flex-col items-center">
+                        <p class="labels" id="labelQ">Total</p>
+                        <div class="bottombuttons w-[5rem] text-center py-1" id="questionNumber">0</div>
+                    </div>
+                    <div class="correct-answers flex flex-col items-center">
+                        <p class="labels" id="labelC">Correct</p>
+                        <div class="bottombuttons w-[5rem] text-center py-1" id="correct">0</div>
+                    </div>
+                    <div class="wrong-answers flex flex-col items-center">
+                        <p class="labels" id="labelW">Wrong</p>
+                        <div class="bottombuttons w-[5rem] text-center py-1" id="wrong">0</div>
+                    </div>
+                    <div class="timerQuestionCorrectWrong"></div>
+                </div>
+                <div class="threeBottomButtons">
+                    <button class="w-[7rem] py-1" id="showAnswer">Show Answer</button>
+                    <button class="reset w-[3.5rem] h-[3.5rem] rounded-full">Reset</button>
+                    <button class="startGame w-[7rem] py-1">Start Game</button>
+                </div>
+            </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
+

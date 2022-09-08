@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Trivia Game</title>
+    </head>
+
+    <body>
+        <div class="containerBox">
+            <h1 class="text-center text-xl" >TRIVIA GAME</h1>
+            <div class="questionBox w-[95vw] h-[5rem] p-1 mx-auto rounded-lg">
+                Please select one of question difficulties, then click on start the game button.
+            </div>
+
+            <div class="">
+
+                <div class="category-and-difficulty-container items-center justify-around flex">
+
+                    <div class="category-container w-[43vw] h-[4.5rem] bg-[#CDDCD1] flex items-center flex-col py-[0.3rem] rounded-lg">
+                        <div class="labelCategory text-sm font-bold text-black">CATEGORY</div>
+                        <div class="category text-sm text-center p-1 rounded-lg">
+                            Loading category...</div>
+                    </div>
+
+                    <div class="qDifficultyBox w-[45vw] pb-1 rounded-lg items-center flex h-[4.5rem] justify-around flex-col">
+                        <div id="question" class="qCat text-sm">QUESTION DIFFICULTY</div>
+                        <div class="difficulties-container">
+                            <button class="difficulty px-1 text-sm rounded-full" id="easy">Easy</button>
+                            <button class="difficulty rounded-full text-sm" id="medium">Medium</button>
+                            <button class="difficulty text-sm rounded-full" id="hard">Hard</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="showAnswer">Loading the answer...</button>
+                <div class="imgAndQuestions">
+                    <img src="pexels-skitterphoto-9198.jpg" alt="nature image">
+                    <div class="answersButtons">
+                        <button class="response" id="response1">Loading the
+                            answer...</button>
+                        <button class="response" id="response2">Loading the
+                            answer...</button>
+                        <button class="response" id="response3">Loading the
+                            answer...</button>
+                        <button class="response" id="response4">Loading the
+                            answer...</button>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomPart">
+                <div class="labelsAndButtons">
+                    <div class="question-number">
+                        <p class="labels" id="labelQ">Total</p>
+                        <div class="bottombuttons" id="questionNumber">0</div>
+                    </div>
+                    <div class="correct-answers">
+                        <p class="labels" id="labelC">Correct</p>
+                        <div class="bottombuttons" id="correct">0</div>
+                    </div>
+                    <div class="wrong-answers">
+                        <p class="labels" id="labelW">Wrong</p>
+                        <div class="bottombuttons" id="wrong">0</div>
+                    </div>
+                    <div class="timerQuestionCorrectWrong"></div>
+                </div>
+                <div class="threeBottomButtons">
+                    <button id="showAnswer">Show Answer</button>
+                    <button class="reset">Reset</button>
+                    <button class="startGame">Start Game</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
+
