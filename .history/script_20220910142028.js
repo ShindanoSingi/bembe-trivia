@@ -334,16 +334,16 @@ showAnswerButton.addEventListener('click', () => {
 
     setTimeout(function () {
          if (response1.innerHTML === answerCopy) {
-        response1.style.backgroundImage = 'linear-gradient(red, yellow)';
+        response1.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(52, 14, 114))'
     };
     if (response2.innerHTML === answerCopy) {
-        response2.style.backgroundImage = 'linear-gradient(red, yellow)';
+        response2.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(52, 14, 114))'
     };
     if (response3.innerHTML === answerCopy) {
-        response3.style.backgroundImage = 'linear-gradient(red, yellow)';
+        response3.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(52, 14, 114))'
     };
     if (response4.innerHTML === answerCopy) {
-        response4.style.backgroundImage = 'linear-gradient(red, yellow)';
+        response4.style.backgroundImage = 'linear-gradient(to left, #333, #333 50%, #eee 75%, #333 25%)'
     };
 
         answerBox.innerHTML = corrAnswer;

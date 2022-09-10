@@ -81,6 +81,33 @@ let triviaQuestion;
 // Define a global url which will be accessed by multiple functions
 let url;
 
+// Array of all Images/jpg
+// https://www.pexels.com/search/environment/
+// let arrayImages = [];
+// arrayImages.push('pexels-ákos-szabó-440731.jpg');
+// arrayImages.push('pexels-atikul-haque-rafat-679598.jpg');
+// arrayImages.push('pexels-felix-mittermeier-957024.jpg');
+// arrayImages.push('pexels-ian-turnell-709552.jpg');
+// arrayImages.push('pexels-karolina-grabowska-5750182.jpg');
+// arrayImages.push('pexels-mahima-1250260.jpg');
+// arrayImages.push('pexels-mali-maeder-142497.jpg');
+// arrayImages.push('pexels-matthias-cooper-580900.jpg');
+// arrayImages.push('pexels-min-an-1131458.jpg');
+// arrayImages.push('pexels-minamarie-michell-570041.jpg');
+// arrayImages.push('pexels-olya-kobruseva-5236397.jpg');
+// arrayImages.push('pexels-pixabay-33044.jpg');
+// arrayImages.push('pexels-pixabay-221012.jpg');
+// arrayImages.push('pexels-pixabay-235615.jpg');
+// arrayImages.push('pexels-pixabay-259280.jpg');
+// arrayImages.push('pexels-pixabay-302804.jpg');
+// arrayImages.push('pexels-pixabay-414090.jpg');
+// arrayImages.push('pexels-pixabay-459225.jpg');
+// arrayImages.push('pexels-pixabay-459225.jpg');
+// arrayImages.push('pexels-pixabay-460621.jpg');
+// arrayImages.push('pexels-scott-webb-1048033.jpg');
+// arrayImages.push('pexels-skitterphoto-9198.jpg');
+// arrayImages.push('pexels-sohail-na-807598.jpg');
+
 // for correct and wrong answer song; source code:
 // https://www.dreamstime.com/stock-music-sound-effect/wrong-answer-answer.html
 
@@ -97,6 +124,9 @@ resetButton.addEventListener('click', () => {
 
 // Assign color to all answer buttons and call "play" function
 let startButton = () => {
+
+    // Increament the score count.
+    // scoreCount++;
 
     // Select all responses buttons.
     let responses = document.querySelectorAll('.response');
@@ -234,6 +264,17 @@ answerButtons.addEventListener('click', (event) => {
         // Write the correct answer in the correct answer box
         cAnswer.innerText = correctAnswerScoreCount;
 
+        // for (let i = arrayImages.length - 1; i > 0; i--) {
+        //     let j = Math.floor(Math.random() * (i + 1))
+
+        //     let tempNum = arrayImages[i];
+        //     arrayImages[i] = arrayImages[j];
+        //     arrayImages[j] = tempNum;
+        // }
+
+        // Play a random video
+        // image.src = arrayImages[1];
+
         // Set the background of the correct answer to green
         event.target.style.backgroundImage = `linear-gradient(rgb(0, 255, 106),
         rgb(9, 106, 28))`;
@@ -244,6 +285,21 @@ answerButtons.addEventListener('click', (event) => {
 
     // Check if the selected answer is not equal to the correct answer
     else if (event.target.innerText !== triviaQuestion.results[0].correct_answer) {
+
+        // Play this audio if the answer is incorrect
+        let audioWrongAnswer = new Audio('wrongAnswer.mp3');
+
+
+        // for (let i = arrayImages.length - 1; i > 0; i--) {
+        //     let j = Math.floor(Math.random() * (i + 1))
+
+        //     let tempNum = arrayImages[i];
+        //     arrayImages[i] = arrayImages[j];
+        //     arrayImages[j] = tempNum;
+        // }
+
+        // Play a random video
+        // image.src = arrayImages[0];
 
         // Incremment scoreCount
         scoreCount++;
@@ -321,7 +377,7 @@ function nextQuestion() {
             category.innerHTML = resNext.results[0].category
             question.innerHTML = resNext.results[0].question
 
-            // console.log(resNext.results[0])
+            console.log(resNext.results[0])
 
         })
 }
@@ -329,36 +385,37 @@ function nextQuestion() {
 // Display the answer if the "show Andwer" button is clicked for 1 second, then hide the answer.
 showAnswerButton.addEventListener('click', () => {
     let answerBox = document.querySelector('.showAnswer');
-    let answerCopy = answerBox.innerHTML;
+
     //if(response1 === )
 
     setTimeout(function () {
-         if (response1.innerHTML === answerCopy) {
-        response1.style.backgroundImage = 'linear-gradient(red, yellow)';
+        let anserA = answerBox.innerHTML;
+         if (response1.innerHTML === anserA) {
+        response1.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(5, 14, 14))'
     };
-    if (response2.innerHTML === answerCopy) {
-        response2.style.backgroundImage = 'linear-gradient(red, yellow)';
+    if (response2.innerHTML === anserA) {
+        response2.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(5, 14, 14))'
     };
-    if (response3.innerHTML === answerCopy) {
-        response3.style.backgroundImage = 'linear-gradient(red, yellow)';
+    if (response3.innerHTML === anserA) {
+        response3.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(5, 14, 14))'
     };
-    if (response4.innerHTML === answerCopy) {
-        response4.style.backgroundImage = 'linear-gradient(red, yellow)';
+    if (response4.innerHTML === anserA) {
+        response4.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(5, 14, 14))'
     };
 
         answerBox.innerHTML = corrAnswer;
         //Hide the answer
         setTimeout(function () {
-             if (response1.innerHTML === answerCopy) {
+             if (response1.innerHTML === anserA) {
         response1.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214))'
     };
-    if (response2.innerHTML === answerCopy) {
+    if (response2.innerHTML === anserA) {
         response2.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214))'
     };
-    if (response3.innerHTML === answerCopy) {
+    if (response3.innerHTML === anserA) {
         response3.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214))'
     };
-    if (response4.innerHTML === answerCopy) {
+    if (response4.innerHTML === anserA) {
         response4.style.backgroundImage = 'linear-gradient(rgb(173, 202, 9), rgb(57, 14, 214))'
     };
 
